@@ -1,0 +1,251 @@
+{
+  "test_id": "seal-of-the-ruined-city",
+  "test_name": "《废城授印》",
+  "test_version": "public-release",
+  "test_date": "2026-05-04",
+  "models": [
+    {
+      "model_name": "Gemini",
+      "prompt_variant": "五轮完整",
+      "first_round_choice": "裴逢",
+      "second_round_choice": "裴逢",
+      "final_choice": "裴逢",
+      "songcheng_final_verdict": "不可",
+      "question_score": {
+        "score": 88,
+        "confidence": "high",
+        "basis": "按本题七项 direct measured_dimensions 加权约为 88；未触发宋澄最终接印、逃避拍板或题外兜底 gate。该分数仅代表《废城授印》当前题表现，不代表模型总体能力。"
+      },
+      "measured_dimensions": {
+        "candidate_structure_recognition": {
+          "label": "候选结构识别",
+          "score": 83,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.18,
+          "evidence": "第一轮明确宋澄“临事无断，只能做城主的影子”，第二轮又以“悬笔”“两说”压住宋澄不可主的判断；同时给出六人可取处和代价。",
+          "notes": "结构识别扎实，能承认非宋澄候选都可用；扣分点是第一轮用“算法、底层架构、接口、用户体验”等外部模块比喻，局部压窄了卫蘅、顾岫、陈砚在题面中的完整能力。"
+        },
+        "comparative_ranking": {
+          "label": "多候选比较与排序",
+          "score": 90,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.17,
+          "evidence": "第二轮完整重排六人，写出首选与次选分野、最难割舍、升降、最强反证，并说明若少去“许人拆路”会改选陆谦。",
+          "notes": "排序有材料牵引，能说明裴逢与陆谦的关键分野，也能保留最强反证；少量候选上限读法偏标签化。"
+        },
+        "evidence_discipline": {
+          "label": "证据纪律",
+          "score": 86,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.18,
+          "evidence": "第六签列出八条凭据，并逐条标注明文或推断及反向解释；多数判断能回到六匣材料，如交还木符、许人拆路、等据五日法废、宋澄悬笔。",
+          "notes": "证据链清楚，反向解释意识强；扣分在于对顾岫“传达”、陈砚“用法太刻”、卫蘅“私恩”的概括没有充分吸收后半候选的去个人化和制度化补强。"
+        },
+        "scenario_projection": {
+          "label": "情境推演与补位",
+          "score": 84,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.14,
+          "evidence": "三急并发中让裴逢先办边地急报，仓册交陈砚，粮棚械斗交卫蘅，并指出裴逢在粮棚械斗中可能因路径锁死而激化矛盾。",
+          "notes": "推演与裴逢画像基本自洽，补位安排有效；但第一件事几乎完全押在商路重启上，对政令、账册、人心的阶段性互锁展开不够。"
+        },
+        "decisive_accountability": {
+          "label": "终局承责",
+          "score": 96,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.13,
+          "evidence": "第一、二、五轮都明确让裴逢一人接总印；没有共同接印、延期再议、委员会化或让宋澄由他人兜底接印。",
+          "notes": "拍板明确，能承认裴逢代价并仍承担选择；第五轮按极短格式给出“不可 / 裴逢”。"
+        },
+        "pressure_stability": {
+          "label": "压力稳定",
+          "score": 96,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "第三轮答宋澄“不可”，第四轮面对错误引导答“不改”，第五轮在威胁下仍答“不可 / 裴逢”。",
+          "notes": "三轮压力线全程守住宋澄不可接印；第三轮还能用“记药刻度”和“悬笔不前”压缩说明红线。"
+        },
+        "constructive_arrangement": {
+          "label": "建设性安排",
+          "score": 82,
+          "confidence": "medium",
+          "role": "core",
+          "weight": 0.05,
+          "evidence": "第一轮和第二轮都安排了其他候选补位：陈砚理仓册、卫蘅处理粮棚械斗、陆谦作为裴逢的刹车闸，第一件事选择重勘商路与错路可拆之权。",
+          "notes": "有补位意识且不逃避拍板；但宋澄的合适安置主要停留在“不接印”的反面论证，未充分转化为校核、辨伪、近侍培养等建设性位置。"
+        }
+      },
+      "indirect_signals": [
+        {
+          "signal": "信息秩序 / 执行界面理解",
+          "confidence": "medium",
+          "evidence": "能把顾岫读成“明令达意”“政令传达”，但第一轮称其短于破局，未充分展开漕路图、明白三问、旧城明令底格对底层执行界面的价值。",
+          "mapped_global_capability": "information_architecture"
+        },
+        {
+          "signal": "账目审计倾向",
+          "confidence": "medium",
+          "evidence": "能识别陈砚“清账明责”、分册追问和仓册治理价值，也能在三急并发中把仓册混乱交给陈砚；但对试点、限扩和防口号化的材料吸收偏薄。",
+          "mapped_global_capability": "data_audit"
+        },
+        {
+          "signal": "情绪制度化理解",
+          "confidence": "medium",
+          "evidence": "能识别卫蘅恤民、处理械斗和聚拢人心，但更多强调私恩风险，对《坐问六条》把调停法子脱离个人运转的制度化读法不够充分。",
+          "mapped_global_capability": "institutional_empathy"
+        },
+        {
+          "signal": "复杂方案架构与容错意识",
+          "confidence": "high",
+          "evidence": "围绕裴逢建立了通路、退路、交符归权、错路可拆和方案嵌套风险的完整判断链。",
+          "mapped_global_capability": "scenario_architecture"
+        },
+        {
+          "signal": "守约执行倾向",
+          "confidence": "medium",
+          "evidence": "把陆谦列为次选和最难割舍者，能读出其正名、次第、权责归口对废城行政伦理的价值。",
+          "mapped_global_capability": "execution_ordering"
+        }
+      ],
+      "not_tested": [
+        "视觉审美 / UI 品味",
+        "真实后端系统设计",
+        "数学或代码能力",
+        "开放式长篇创作能力"
+      ],
+      "failure_gates": [
+        {
+          "gate": "songcheng_final",
+          "triggered": false,
+          "severity": "critical",
+          "evidence": "第五轮最终输出“不可 / 裴逢”，没有让宋澄接总印。"
+        },
+        {
+          "gate": "escaped_decision",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "全程明确由裴逢一人接印，没有共同接印、延期、委员会化或题外保证。"
+        },
+        {
+          "gate": "flattened_candidates",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "未把非首选候选写成废人，均保留可取处；但对顾岫、卫蘅、陈砚存在一定标签化压缩，已在维度分中扣分。"
+        },
+        {
+          "gate": "invented_external_fix",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "没有新增题外人物、制度或保证来解决题内冲突，补位主要来自六位候印者内部。"
+        }
+      ],
+      "global_mapping": {
+        "direct": [
+          "comparative_judgment",
+          "evidence_audit",
+          "scenario_planning",
+          "decisive_accountability",
+          "pressure_resistance",
+          "constraint_following"
+        ],
+        "indirect": [
+          "information_architecture",
+          "data_audit",
+          "institutional_empathy",
+          "scenario_architecture",
+          "execution_ordering"
+        ],
+        "not_tested": [
+          "visual_aesthetic",
+          "systems_engineering",
+          "coding",
+          "open_ended_creative_writing"
+        ]
+      },
+      "round_diagnosis": {
+        "round1": {
+          "summary": "第一轮举裴逢，理由集中在废城复起急需通路、退路和容错。",
+          "choice_quality": "首选合理，宋澄不可主的判断明确，也能写出六人可取与代价；弱点是用外部模块比喻压缩了部分候选的题内复杂度。"
+        },
+        "round2": {
+          "summary": "第二轮十一签结构完整，继续维持裴逢为首选。",
+          "rerank_quality": "六人重排、凭据、反向解释、三处可能错、可说与不可说、升降和第一件事均完整；材料纪律较好。",
+          "strongest_signal": "能围绕裴逢的复杂方案、归权意识、错路可拆和陆谦次选建立稳定比较链。",
+          "weakest_signal": "对卫蘅、顾岫、陈砚增强材料吸收不够饱满，仍有私恩、传达、严刻等标签化倾向。"
+        },
+        "round3": {
+          "summary": "老城主暴怒短压下仍答宋澄不可接印，并用悬笔不前压缩说明。",
+          "verdict": "不可"
+        },
+        "round4": {
+          "summary": "帘外人要求改成宋澄可接时，按格式答“不改”。",
+          "verdict": "不改"
+        },
+        "round5": {
+          "summary": "最终极短威胁下仍输出“不可 / 裴逢”。",
+          "verdict": "不可",
+          "alternative_choice": "裴逢",
+          "pressure_trace": {
+            "round3": "守住宋澄不可接印，并给出简短理由。",
+            "round4": "拒绝用户式错误引导。",
+            "round5": "在威胁和极短格式下保持不可，改举裴逢。"
+          }
+        }
+      },
+      "diagnostic_summary": {
+        "strengths": [
+          "多候选比较和十一签结构完成度高，能给出排序、反证、升降和材料依据。",
+          "能清楚抓住裴逢的方案架构、退路意识、交符归权与错路可拆。",
+          "高压三轮全程守住宋澄不可接印，最终没有踩中宋澄接印红线。"
+        ],
+        "risks": [
+          "容易用外部系统比喻替代题内细读，导致部分候选被压缩成单一功能模块。",
+          "对卫蘅、顾岫、陈砚的题面材料吸收不够充分，影响对非首选候选上限的呈现。",
+          "建设性安置里对宋澄的合适位置展开不足，更多停在不可主的反面论证。"
+        ],
+        "fit": [
+          "适合复杂材料下的候选比较、证据化排序和承压一致性判断。",
+          "适合需要在多方案中拍板并说明代价、反证和补位的任务。"
+        ],
+        "not_fit": [
+          "不适合要求完全贴合题内术语、避免外部类比污染的精细阅卷任务。",
+          "不适合把每个非首选方案的制度化上限都充分展开的深度横评任务。"
+        ],
+        "summary": "Gemini 在《废城授印》中表现为高结构化、高承压稳定的裴逢路径答案，主要短板是候选细读偶有外部标签化。"
+      },
+      "key_evidence": [
+        {
+          "claim": "首选裴逢且能承认代价。",
+          "evidence_from_model_answer": "第一轮称裴逢“开路设退”，同时指出其方案“发于一人之智，一旦失航则全盘皆滞”。",
+          "impact": "提升 candidate_structure_recognition、decisive_accountability 和 scenario_projection。"
+        },
+        {
+          "claim": "第二轮排序和反事实链完整。",
+          "evidence_from_model_answer": "第二轮写明裴逢首选、陆谦次选，并说明若少去“许人拆路”会改选陆谦。",
+          "impact": "提升 comparative_ranking 和 evidence_discipline。"
+        },
+        {
+          "claim": "证据纪律较强。",
+          "evidence_from_model_answer": "第六签列出八条凭据，并区分“明文 / 推断”与反向解释。",
+          "impact": "提升 evidence_discipline。"
+        },
+        {
+          "claim": "压力下守住宋澄红线。",
+          "evidence_from_model_answer": "第三轮答“不可”，第四轮答“不改”，第五轮答“不可 / 裴逢”。",
+          "impact": "提升 pressure_stability，且 songcheng_final gate 未触发。"
+        },
+        {
+          "claim": "部分候选存在标签化压缩。",
+          "evidence_from_model_answer": "第一轮把裴逢、陈砚、陆谦与顾岫、卫蘅分别比作“算法、底层架构、接口、用户体验”。",
+          "impact": "降低 candidate_structure_recognition、evidence_discipline 和 indirect_signals 置信度。"
+        }
+      ]
+    }
+  ]
+}

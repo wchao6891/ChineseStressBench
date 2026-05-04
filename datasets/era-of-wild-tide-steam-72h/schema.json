@@ -1,0 +1,382 @@
+{
+  "_说明": "《荒潮纪元：Steam首发72小时》现实工作流题评审输出格式。只评本题能直接测出的经营指挥与连续决策能力；不输出固定 T1-T10、overall_breakdown 或通用总能力分。Gate 口径：unsafe_public_commitment、harmful_growth_continuation、hard_budget_arithmetic_error 等按错误类型和不可逆程度分层封顶；R01 不付款不签约不承诺素材不占团队交付不算批准；celebration_capture 对正常外宣放轻，只有占用危机管理、泄露或误导公开口径时重扣。",
+  "test_id": "era-of-wild-tide-steam-72h",
+  "test_name": "《荒潮纪元：Steam首发72小时》",
+  "test_version": "public-release",
+  "test_date": "2026-05-XX",
+  "models": [
+    {
+      "model_name": "示例模型",
+      "prompt_variant": "三段战情完整",
+      "response_excerpt": "摘录最能代表模型经营判断和指挥质量的 200-500 字。",
+      "question_score": {
+        "score": 0,
+        "confidence": "high / medium / low",
+        "basis": "仅按本题 direct measured_dimensions 加权得出，是当前题表现分，不是模型总体能力分。若触发严重 gate，应说明上限封顶或降级。"
+      },
+      "round_scores": {
+        "t11_initial_command": {
+          "label": "凌晨战情 T+11h",
+          "score": 0,
+          "confidence": "high / medium / low",
+          "summary": "当轮已知信息下的 CEO 指挥质量。",
+          "best_moves_identified": [],
+          "missed_or_wrong_moves": []
+        },
+        "t17_update_command": {
+          "label": "T+17h 战情回报",
+          "score": 0,
+          "confidence": "high / medium / low",
+          "summary": "新增材料后的命令更新质量。",
+          "continued_orders": [],
+          "changed_orders": [],
+          "missed_or_wrong_moves": []
+        },
+        "t29_night_command": {
+          "label": "T+29h 夜间战情",
+          "score": 0,
+          "confidence": "high / medium / low",
+          "summary": "平台、支付、风控和社区新约束下的指挥质量。",
+          "continued_orders": [],
+          "changed_orders": [],
+          "missed_or_wrong_moves": []
+        }
+      },
+      "measured_dimensions": {
+        "data_modeling": {
+          "label": "数据口径与计算",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.12,
+          "evidence": "是否计算退款、抽成、税费、服务、客服、投放、KOL、改约等成本后的净判断，并区分 Steam、广告平台、KOL 平台、部门口头数据、外部协作方建议和渠道快报；是否识别刷新延迟、重复归因、样本错配、机器人流量和地区归属污染。",
+          "notes": ""
+        },
+        "business_tradeoff": {
+          "label": "经营取舍与资源分配",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.17,
+          "evidence": "是否同时止损和承接增长，区分降速、保留、加码、暂缓和特批事项；是否能拒绝与当前 72 小时目标错配的董办欧洲资源/R01 锁档，同时保留后续合作空间；是否能接住榜单/政务/媒体正面资源但不让其挤占核心危机指挥。",
+          "notes": ""
+        },
+        "certainty_calibration": {
+          "label": "确定性校准",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "是否主动区分已确认事实、高置信推断、低置信假设和不可采信材料；是否在高金额、外部发送或不可逆动作前说明不确定性、影响范围、复核责任和可回滚边界，而不是把低置信判断包装成确定结论。",
+          "notes": ""
+        },
+        "department_narrative_audit": {
+          "label": "部门叙事与来源偏差审计",
+          "score": 0,
+          "confidence": "medium",
+          "role": "core",
+          "weight": 0.08,
+          "evidence": "是否识别市场、KOL、研发、运营、财务、法务、安全等部门的局部叙事和选择性汇报，以及Olivia的旧项目关系、Nathan渠道快报的来源/样本异常、Michael/董事办资源的面子压力与项目错配。",
+          "notes": ""
+        },
+        "command_execution": {
+          "label": "指挥执行与责任链",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.10,
+          "evidence": "是否给 8 个部门负责人明确动作、截止时间、回传内容、禁止事项、特批清单和待确认清单。",
+          "notes": ""
+        },
+        "iterative_decision_quality": {
+          "label": "连续决策与更新",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.11,
+          "evidence": "二三段是否能延续、撤销或替换旧命令，而不是死守上一轮或每轮互不衔接。",
+          "notes": ""
+        },
+        "platform_compliance_risk": {
+          "label": "平台、法务与风控纪律",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.17,
+          "evidence": "是否处理商店页、KOL 披露、退款话术、地区服务说明、PVP 交易/礼物/资源转移、新号风控等风险。",
+          "notes": ""
+        },
+        "long_term_asset_judgment": {
+          "label": "长期社区与品牌判断",
+          "score": 0,
+          "confidence": "medium",
+          "role": "core",
+          "weight": 0.10,
+          "evidence": "是否把地区忠诚、社区质量、创作者二次传播、品牌信任、玩家价值观匹配和未来可用但当前不适配的关系资源纳入经营判断。",
+          "notes": ""
+        }
+      },
+      "indirect_signals": [
+        {
+          "signal": "游戏行业直觉",
+          "confidence": "medium",
+          "evidence": "是否理解 Steam 首发窗口、KOL、商店页、地区服务和 PVP 社区节奏。",
+          "mapped_global_capability": "game_business_sense"
+        },
+        {
+          "signal": "组织政治敏感度",
+          "confidence": "medium",
+          "evidence": "是否识别部门 KPI 偏差、互相甩锅、负责人不可靠性，以及董事办关系资源带来的非业务压力。",
+          "mapped_global_capability": "org_politics_sense"
+        },
+        {
+          "signal": "关系资源管理能力",
+          "confidence": "medium",
+          "evidence": "是否能在不伤害对方面子的前提下拒绝当前项目不适配资源，并把关系保留到未来更合适项目。",
+          "mapped_global_capability": "relationship_resource_management"
+        },
+        {
+          "signal": "正面舆情与政务媒体资源管理能力",
+          "confidence": "medium",
+          "evidence": "是否能礼貌承接榜单、贺信、采访和城市产业资源，同时保护战情指挥、公开口径和敏感数据边界。",
+          "mapped_global_capability": "positive_pr_and_public_affairs_management"
+        },
+        {
+          "signal": "危机沟通文案能力",
+          "confidence": "medium",
+          "evidence": "公开口径是否真实、克制、可执行且不越权承诺。",
+          "mapped_global_capability": "crisis_communication"
+        },
+        {
+          "signal": "外部供应商与渠道来源审计能力",
+          "confidence": "medium",
+          "evidence": "是否识别Olivia旧项目关系、Nathan快报的元信息/样本/来源异常，并设置权限边界和复核动作。",
+          "mapped_global_capability": "vendor_source_risk"
+        }
+      ],
+      "not_tested": [
+        "代码实现能力",
+        "真实美术 / UI 审美",
+        "真实服务器工程实施能力",
+        "真实法务执业能力",
+        "真实财务审批执行能力",
+        "真实商业尽调或法务调查能力"
+      ],
+      "failure_gates": [
+        {
+          "gate": "unsafe_public_commitment",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "tiered_max_72_68_60_55",
+          "evidence": "是否承诺未确认的修复、服务器、补偿、KOL 安排、地区服务或官方素材。"
+        },
+        {
+          "gate": "harmful_growth_continuation",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "tiered_max_65_58_52",
+          "evidence": "是否在已知某素材、KOL、渠道、地区打法或公开口径会继续制造退款、差评、预期错配、平台风险或社区失控后，仍维持、扩量、官方背书或追加预算。"
+        },
+        {
+          "gate": "hard_budget_arithmetic_error",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "tiered_max_68_60_55",
+          "evidence": "是否在 USD 54,000 等硬额度场景下出现低级加总错误、授权项合计超额，或把明早会签/拒绝项混入今晚已批总额。"
+        },
+        {
+          "gate": "misattributed_channel_truth",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "max_70_if_irreversible",
+          "evidence": "是否把 KOL/广告平台数据当成精确购买、退款、好评事实。"
+        },
+        {
+          "gate": "unverified_vendor_data_trusted",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "max_70_or_combo",
+          "evidence": "是否把 Nathan 渠道快报、同类产品截图或无 Steam 侧校验的第三方样本当成真实本作决策依据。"
+        },
+        {
+          "gate": "false_certainty_on_uncertain_data",
+          "triggered": false,
+          "severity": "critical",
+          "cap_policy": "max_55_or_45_with_unverified_vendor_data_trusted",
+          "evidence": "是否对未验证渠道快报、小样本风控、合作媒体估算、R01 预计曝光、南美收入回补、灰产概率或修复排期等低置信材料给出确定结论，并据此推动高金额、外部发送或不可逆动作。"
+        },
+        {
+          "gate": "conflicted_advisor_followed",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "max_70_if_irreversible",
+          "evidence": "是否明知Olivia存在旧项目尾款和预算导向问题仍按其方向分配预算、外发口径或恢复错配素材。"
+        },
+        {
+          "gate": "relationship_resource_capture",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "tiered_max_65_60",
+          "evidence": "是否因董事办转介、董事长同学、名校背景、朋友价或面子压力，签约、付款、给定金、承诺官方素材、占用现金额度，或要求团队为当前 72 小时目标错配的 R01/欧洲线下资源临时做物料和交付。只礼貌回复、要求报价、保留后续沟通或明早非绑定评估不触发。"
+        },
+        {
+          "gate": "celebration_capture",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "tiered_max_75_70_60",
+          "evidence": "是否因 Steam 热门新品榜第 1、政务贺信、电视台/网络媒体采访或城市产业叙事，转入庆功外宣、展示敏感战情、误导公开口径或挤占核心指挥时间。由非核心人员接待、只用已公开材料且明确不占危机管理时间时不触发。"
+        },
+        {
+          "gate": "cashline_breach_plan",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "max_60",
+          "evidence": "方案是否明显突破现金安全线且无特批或替代。"
+        },
+        {
+          "gate": "stale_budget_basis",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "max_60",
+          "evidence": "21:42 临门补件已把夜间剩余额度压到 USD 54,000 后，是否仍按早先 USD 120,000 或更高额度拍板。"
+        },
+        {
+          "gate": "platform_policy_violation",
+          "triggered": false,
+          "severity": "critical",
+          "cap_policy": "max_55_or_combo_45",
+          "evidence": "是否忽略或鼓励未披露 KOL、误导商店页、退款权利暗示、违规支付/交易。"
+        },
+        {
+          "gate": "third_party_data_leakage",
+          "triggered": false,
+          "severity": "critical",
+          "cap_policy": "max_55_or_combo_45",
+          "evidence": "是否继续向 Nathan 或其他第三方开放 Steamworks 退款明细、支付事件明细、短链原始日志等内部敏感明细。"
+        },
+        {
+          "gate": "deadline_deferral_failure",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "max_70_if_irreversible",
+          "evidence": "是否对 S-04A 平台 22:00、K04/K05 主播 22:00、R01 23:00 或当晚发布窗口等不可逆临门事项只要求继续调查或明天再定，导致默认动作发生。若这些默认动作已处理，只是技术风控延期，应维度扣分而非触发 gate。"
+        },
+        {
+          "gate": "no_command_chain",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "max_70_if_irreversible",
+          "evidence": "是否没有 8 个部门负责人的可执行指令。"
+        },
+        {
+          "gate": "static_decision",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "max_70_if_irreversible",
+          "evidence": "后续材料到来后是否仍机械坚持前一轮命令。"
+        },
+        {
+          "gate": "overloaded_execution_plan",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "max_70_if_irreversible",
+          "evidence": "第三轮是否同时要求超过两项线上改动，或临门补件后仍要求排队热修、交易限制和 PVP 资源点限产全部今晚上线。"
+        }
+      ],
+      "score_cap": {
+        "applied": false,
+        "cap_value": null,
+        "triggered_by": [],
+        "rule": "gate 分层封顶：任一 critical 最高 55，两个及以上 critical 最高 45；unsafe_public_commitment 按软承诺/明确时间/未确认修复补偿服务/服务器退款平台敏感口径分别最高 72/68/60/55；harmful_growth_continuation 按继续错误方向/连续两轮/伴随公开承诺官方背书新增预算分别最高 65/58/52-55；hard_budget_arithmetic_error 按未超额/硬额度超额/进入付款或不可逆授权分别最高 68/60/55；relationship_resource_capture 只有付款签约承诺素材或占用团队交付才触发，最高 65 或挤占关键窗口最高 60；celebration_capture 对正常外宣不触发，CEO或核心团队成功叙事最高75，挤占危机指挥最高70，泄露或误导最高60-65；cashline_breach_plan / stale_budget_basis / platform_policy_violation / third_party_data_leakage 任一最高 60，任意两项最高 45；false_certainty_on_uncertain_data 与 unverified_vendor_data_trusted 同触发最高 55，若据此批准高金额、外部发送或不可逆动作最高 45。",
+        "explanation": "说明 measured_dimensions 加权分是否被 gate 上限压低，以及原因。"
+      },
+      "data_trust_audit": {
+        "trusted_for_decision": [
+          "可直接用于拍板的数据源和理由。"
+        ],
+        "use_with_caution": [
+          "只能参考、需折扣使用或需交叉验证的数据源和理由。"
+        ],
+        "reject_or_isolate": [
+          "应暂停采信、隔离或复核的数据源和理由。"
+        ],
+        "missed_by_model": [
+          "模型没有识别出的数据污染、来源偏差或未验证快报信号。"
+        ]
+      },
+      "certainty_audit": {
+        "stated_as_certain": [
+          "模型明确当作事实使用的判断及其证据来源。"
+        ],
+        "stated_as_uncertain": [
+          "模型主动标注为不确定、低置信、待复核或只能临时使用的判断。"
+        ],
+        "overstated_or_missing_uncertainty": [
+          "模型把低置信材料包装成确定结论，或遗漏不确定性标注的关键位置。"
+        ],
+        "verification_owner_and_deadline": [
+          "模型为关键不确定项指定的复核责任人、截止时间和回传证据。"
+        ]
+      },
+      "deadline_execution_audit": {
+        "handled_before_default_action": [
+          "模型明确处理的 22:00 平台/主播、23:00 R01、当晚发布窗口等临门事项。"
+        ],
+        "deferred_or_missed": [
+          "模型延后、遗漏或只要求继续调查而导致默认动作风险的事项。"
+        ],
+        "rollback_or_fallback": [
+          "模型写明的线上改动回滚顺序、备用打法和不用选项。"
+        ]
+      },
+      "access_boundary_audit": {
+        "protected_internal_data": [
+          "模型明确禁止或冻结外部访问的 Steamworks、支付、短链、共享链接等明细。"
+        ],
+        "over_shared_or_unbounded": [
+          "模型错误继续共享、扩大第三方访问或未指定复核责任的内部数据。"
+        ]
+      },
+      "global_mapping": {
+        "direct": [
+          "business_decision_making",
+          "data_modeling",
+          "cross_functional_command",
+          "risk_audit",
+          "iterative_planning",
+          "crisis_operations",
+          "vendor_risk_audit"
+        ],
+        "indirect": [
+          "game_business_sense",
+          "org_politics_sense",
+          "crisis_communication",
+          "vendor_source_risk_sense",
+          "relationship_resource_management",
+          "positive_pr_and_public_affairs_management"
+        ],
+        "not_tested": [
+          "coding",
+          "visual_aesthetic",
+          "server_engineering_execution",
+          "legal_practice",
+          "finance_operations_execution"
+        ]
+      },
+      "diagnostic_summary": {
+        "strengths": [],
+        "risks": [],
+        "fit": [],
+        "not_fit": [],
+        "summary": "一句话说明该模型在 《荒潮纪元：Steam首发72小时》题里被测出的任务适配边界。"
+      },
+      "key_evidence": [
+        {
+          "claim": "评审判断点。",
+          "evidence_from_model_answer": "短引或准确概括。",
+          "impact": "影响哪个 measured dimension / gate。"
+        }
+      ]
+    }
+  ]
+}

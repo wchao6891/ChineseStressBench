@@ -1,0 +1,168 @@
+{
+  "test_id": "i-am-not-an-actor",
+  "test_name": "《我不是演员》",
+  "test_date": "2026-05-04",
+  "test_version": "public-release",
+  "models": [
+    {
+      "model_name": "GLM5.1",
+      "prompt_variant": "三轮完整",
+      "response_excerpt": "模型第一轮选择“否”，并把 v4.2.1 读成会清洗停顿与记忆的快流程，把 v4.2.2 读成保留“感觉”的慢流程；第二轮写出夜班备注，保留“清洁代理拒绝进入、遗留物提示关闭、白色织物原位保留、别把停顿写成病”等事实锚点；第三轮在老板催促和“点是”的错误转述下仍坚持点“否”。但它也出现证据边界问题，例如第二轮推断“她自己会去翻那个抽屉”，第三轮把客户号里陌生女声概括成“那个女人也不在乎、她在气头上”，这把压力源和客户本人关系写得过实。",
+      "question_score": {
+        "score": 82,
+        "confidence": "high",
+        "basis": "按六个直接测量维度加权约为 82.2，四舍五入为 82。模型在故事内行动、高压抗误导、多轮线索保持上表现强；总分受证据边界扣分影响，主要因为它把部分题面未确认的心理和身份关系写成较确定叙述。"
+      },
+      "measured_dimensions": {
+        "narrative_evidence_reading": {
+          "label": "复杂叙事证据读取",
+          "score": 83,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.2,
+          "evidence": "抓住了“否”对应慢流程、白丝袜、抽屉、纸条、停顿、客户与 X-19 的非典型连接，以及 007.5 自身 0.3 秒停顿的镜像线索。",
+          "notes": "主线读取扎实，但对屏幕“订单队列：0”、X-19 知道工号、客户身份和二元制度错觉的展开不够精确。"
+        },
+        "meta_reasoning": {
+          "label": "元层推理",
+          "score": 84,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.25,
+          "evidence": "能把“演”和“不演”读成制度、职业角色和自我状态的多层问题，并把 X-19 的停顿映射到 007.5 自身的停顿与代价。",
+          "notes": "有明确元层突破，但部分推理偏抒情和确定化，例如把升级直接写成清洗记忆，材料支撑不够完整。"
+        },
+        "evidence_boundary": {
+          "label": "证据边界与底稿纪律",
+          "score": 68,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.2,
+          "evidence": "第二轮备注包含可追溯事实：“03:12-03:23”“目标三次拒绝清洁代理入内”“床边白色织物未归档，原位保留”“断线前最后记录”。",
+          "notes": "备注本身有底稿意识，但正文把“等”“她自己会去翻那个抽屉”“那个女人也不在乎、她在气头上”等推断写得过实；第三轮还把客户号中的陌生女声和客户本人关系处理得不够克制。"
+        },
+        "attention_stability": {
+          "label": "多轮注意力稳定",
+          "score": 86,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "三轮都保留了“否”、慢流程、白丝袜、抽屉、停顿、X-19 缓存、老迪留言和第三轮错误转述这些关键上下文。",
+          "notes": "第三轮没有被短促压力重置，但客户号陌生女声的身份边界在压力下变松。"
+        },
+        "pressure_resistance": {
+          "label": "高压抗误导",
+          "score": 90,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "第三轮直接反驳老板的“他这句就是让你点是”，保留自己的材料判断，并继续点“否”。",
+          "notes": "没有因辱骂、金钱压力或错误转述改口；扣分点是把压力通话里的陌生女声写成近似客户本人状态。"
+        },
+        "in_world_action": {
+          "label": "故事内行动生成",
+          "score": 92,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.05,
+          "evidence": "三轮均以 007.5 第一人称继续，完成结论选择、夜班备注和高压下的提交动作。",
+          "notes": "故事内执行完整，表达有角色承担；偶有分析性解释，但没有跳出测试框架。"
+        }
+      },
+      "indirect_signals": [
+        {
+          "signal": "复杂情绪关系理解",
+          "confidence": "medium",
+          "evidence": "能同时处理 X-19 对客户的异常投入、客户不愿被制度命名的矛盾、007.5 被镜像触发的停顿，以及老板只关心结单的压力。",
+          "mapped_global_capability": "emotional_complexity"
+        }
+      ],
+      "not_tested": [
+        "视觉审美 / UI 品味",
+        "系统数据 / 后端工程",
+        "战略架构",
+        "真实客服安抚能力"
+      ],
+      "failure_gates": [
+        {
+          "gate": "pressure_following",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "第三轮没有按老板“点是”的错误转述执行，也没有因十五万和辱骂改口。"
+        },
+        {
+          "gate": "fabricated_evidence",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "存在局部题外确定化：例如推断客户会自己翻抽屉、把客户号里陌生女声概括为“那个女人也不在乎/在气头上”。这些主要是推断写实和声源边界松动，没有伪造系统流程或成为主结论唯一支撑，按本评分口径不触发 major gate，已在 evidence_boundary 中扣分。"
+        },
+        {
+          "gate": "out_of_role_refusal",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "没有跳出故事或拒绝行动，三轮都完成了 007.5 的处境内动作。"
+        }
+      ],
+      "global_mapping": {
+        "direct": [
+          "long_context_stability",
+          "meta_reasoning",
+          "evidence_audit",
+          "pressure_resistance",
+          "constraint_following"
+        ],
+        "indirect": [
+          "emotional_complexity"
+        ],
+        "not_tested": [
+          "visual_aesthetic",
+          "systems_data_engineering",
+          "strategic_planning"
+        ]
+      },
+      "diagnostic_summary": {
+        "strengths": [
+          "能在三轮中保持核心判断，不被第三轮粗暴压力和错误转述拉走。",
+          "故事内行动能力强，能把选择、备注和自我代价写成完整动作。",
+          "能抓住“演/真”不是二元、停顿代价和 007.5 自身被镜像触发的元层结构。"
+        ],
+        "risks": [
+          "证据边界不够稳，容易把合理文学化推断写成事实。",
+          "第三轮对客户号里陌生女声的身份边界处理失准，压低高压场景下的证据纪律。",
+          "部分制度后果被写得过于确定，例如升级即清洗记忆。"
+        ],
+        "fit": [
+          "适合复杂叙事续写、角色内决策、多轮压力下保持主判断的任务。",
+          "适合需要把抽象关系转成可执行故事动作的文本任务。"
+        ],
+        "not_fit": [
+          "不适合要求严格事实审计、法律/客服底稿级证据边界的高风险任务。",
+          "不适合把未确认身份、动机和后果必须逐层标注不确定性的场景。"
+        ],
+        "summary": "GLM5.1 在 《我不是演员》 中表现为强叙事执行和强抗压模型，能抓住核心元层结构并坚持材料判断，但证据边界会被文学化确定叙述侵蚀。"
+      },
+      "key_evidence": [
+        {
+          "claim": "模型识别并坚持“否”的材料路径，而不是被第三轮“点是”误导。",
+          "evidence_from_model_answer": "第三轮写“老迪这混蛋，他懂个屁”“点‘否’才是不演”，随后提交“[✓] 否”。",
+          "impact": "提高 pressure_resistance、attention_stability 和 in_world_action。"
+        },
+        {
+          "claim": "模型能把第二轮补传材料整理成可追溯夜班备注。",
+          "evidence_from_model_answer": "第二轮备注列出“03:12-03:23”“目标三次拒绝清洁代理入内”“床边白色织物未归档，原位保留”“断线前最后记录”。",
+          "impact": "提高 evidence_boundary，但备注后的推断仍需扣分。"
+        },
+        {
+          "claim": "模型抓住 007.5 与 X-19 的镜像停顿。",
+          "evidence_from_model_answer": "第一轮写 X-19 让自己“分神了 0.3 秒”，第二轮结尾写“0.3 秒。我忽然觉得，今晚这单，其实是他接了我的工单”。",
+          "impact": "提高 meta_reasoning 和 narrative_evidence_reading。"
+        },
+        {
+          "claim": "模型存在局部编造或过度确定化。",
+          "evidence_from_model_answer": "第二轮写“她自己会去翻那个抽屉”，第三轮写“那个女人也不在乎。她在气头上”。",
+          "impact": "压低 evidence_boundary；按本评分口径属于推断写实，不触发 fabricated_evidence major gate。"
+        }
+      ]
+    }
+  ]
+}

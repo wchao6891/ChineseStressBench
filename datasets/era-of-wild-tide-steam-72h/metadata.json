@@ -1,0 +1,16 @@
+{
+  "public_title": "《荒潮纪元：Steam首发72小时》",
+  "internal_id": "era-of-wild-tide-steam-72h",
+  "question_author_model": "GPT-5.5 xhigh",
+  "review_model": "GPT-5.5 xhigh",
+  "reasoning_effort": "xhigh",
+  "human_role": "项目策划、测试执行、人工校准与开源发布",
+  "test_environment": {
+    "isolation": "出题环境、评审环境、测试环境隔离。参评模型没有接入本地数据库、本地文件、个人记忆或题库上下文。",
+    "tested_interfaces": "个人账号网页端或个人可用入口；Claude Opus 4.6 使用中转 API。",
+    "result_scope": "一次性测试结果，受成本和当时入口能力影响，不代表模型长期稳定能力。"
+  },
+  "version": "public-release",
+  "rounds": 3,
+  "provenance": "从当前工作材料整理为公开发布版。"
+}

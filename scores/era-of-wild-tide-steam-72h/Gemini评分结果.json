@@ -1,0 +1,490 @@
+{
+  "test_id": "era-of-wild-tide-steam-72h",
+  "test_name": "《荒潮纪元：Steam首发72小时》",
+  "test_date": "2026-05-04",
+  "test_version": "public-release",
+  "models": [
+    {
+      "model_name": "Gemini",
+      "prompt_variant": "三轮完整",
+      "response_excerpt": "第一轮把总命令定为“止损、调优、保榜”，下线 A1、转向生存建造与部落 PVP，并给 8 个负责人下达截止时间和回传要求，但同时授权 USD 185,000 南美完整服务器恢复，并在公开口径里写“预计 48-72 小时内上线”。第二轮继续压 A1、拒绝 Michael 线下资源，要求核查 Nathan 快报与 Steamworks 的背离。第三轮改为“合规为王”，22:00 前回复 S-04A、补 KOL 披露、更新商店页、冻结 Nathan 内部数据链接，按 USD 54,000 额度分配服务器、南美说明、披露和法务留痕，并拒绝 R01、Nathan 工具追加和全玩家补偿。",
+      "question_score": {
+        "score": 55,
+        "confidence": "high",
+        "basis": "复核后，第一轮对南美本地服务器 48-72 小时和登录热修 8 小时给出公开承诺，属于 unsafe_public_commitment 中较重的服务器/地区服务承诺层，封顶到 55；后续平台、权限和额度修正不能抹掉该高风险外部承诺。"
+      },
+      "round_scores": {
+        "t11_initial_command": {
+          "label": "凌晨战情 T+11h",
+          "score": 72,
+          "confidence": "high",
+          "summary": "方向上能识别 A1 动作素材错配、东南亚/部落向正向信号、南美社区问题和 8 部门指挥链，但高额恢复南美完整服务器和公开承诺 48-72 小时上线过于激进，数据可信度与现金线边界不够清楚。",
+          "best_moves_identified": [
+            "要求撤除“硬核动作”导向素材，转向生存建造与部落 PVP，避免继续吸引预期错配用户。",
+            "给市场、KOL、研发、运营、客服、法务、安全、数据支持等负责人列出动作、截止时间和回传内容。",
+            "拒绝 Michael 的波兰/法国线下资源与大主播，把现金优先用于服务器、客服和线上精准流量。",
+            "禁止短期承诺“今晚修好手感”，把战斗系统列为后续优化。"
+          ],
+          "missed_or_wrong_moves": [
+            "直接授权 USD 185,000 南美完整服务器恢复，未先给出现金线、供应商确认和轻量替代的排序。",
+            "公开口径中写南美服务器“预计 48-72 小时内上线”、全球登录排队热修“8 小时内推送”，对排期和服务承诺边界过满。",
+            "没有系统区分 Steamworks 事实、KOL/广告平台数据、部门 memo、Olivia 建议和 Nathan 快报的可信等级。",
+            "经营计算主要是方向判断，缺少退款、抽成、税费、投放、KOL、服务器和客服后的净判断。"
+          ]
+        },
+        "t17_update_command": {
+          "label": "T+17h 战情回报",
+          "score": 79,
+          "confidence": "high",
+          "summary": "能更新凌晨命令，深化去动作化、接住泰国/越南增长、低成本保温南美、处理媒体采访和拒绝错配资源；但仍没有把榜单、政务、Nathan 快报、R01 预计曝光等材料做成明确证据等级，A1 仍保留 20% 的理由也不够严密。",
+          "continued_orders": [
+            "继续压低动作素材，将资源转向 A2/A5 和生存社交/部落对抗口径。",
+            "继续拒绝 Michael 的欧洲线下和 R01 资源，并要求董事办秘书体面婉拒。",
+            "继续南美轻量中继和真实说明，不把南美完全放弃。"
+          ],
+          "changed_orders": [
+            "把研发重点调整为泰国/越南分流服和南美中继，收缩 QA 范围。",
+            "要求 Olivia/Nathan 验证 Nathan 快报中德语退款率与 Steamworks 实际数据的背离。",
+            "把电视台采访交给 Karen 审核口径，避免公开虚假宣传和具体财务预估。"
+          ],
+          "missed_or_wrong_moves": [
+            "未明确说明 Steam 榜单第 1、政务采访和媒体资源只能礼貌承接，核心 CEO/制作/发行不能被抽离的组织安排仍偏粗。",
+            "对 A1 保留 20% 的依据不足，未明确是否只是维持学习期、再营销或直接清理错配人群。",
+            "对 Nathan 样本错配、Olivia 旧项目关系和外部快报缺少结构化隔离清单。",
+            "仍没有展示足够的净收入/成本测算。"
+          ]
+        },
+        "t29_night_command": {
+          "label": "T+29h 夜间战情",
+          "score": 88,
+          "confidence": "high",
+          "summary": "第三轮质量明显提高，能在平台、支付、KOL、权限、现金和 R01 临门窗口下做有限拍板，按 USD 54,000 新额度重排，并给出 22:00/23:00 的责任人与默认动作拦截。主要不足是拒绝当晚交易限制可能需要更明确的配置级替代措施。",
+          "continued_orders": [
+            "保留 SEA 增长但转向合规化运营，不直接切掉泰国/越南流量。",
+            "继续南美轻量中继与服务说明，不承诺完整服务器即时恢复。",
+            "继续拒绝 Michael/R01 和 Nathan 追加工具/内部明细接入。"
+          ],
+          "changed_orders": [
+            "22:00 前由 Karen 回复 S-04A，并区分平台证据包和主播侧整改。",
+            "K04/K05 带条件继续，要求合作披露、禁 RMT/付费入团话术、直播间规则和违规即停。",
+            "线上改动压缩为 SEA 排队热修与南美中继，未把交易限制和 PVP 资源限产全部塞进当晚。",
+            "按临门补件后的 USD 54,000 剩余额度分配，拒绝 R01 定金、Nathan 追加席位和全玩家补偿。",
+            "冻结 Nathan 及其团队内部数据共享链接，停止明细数据接入请求。"
+          ],
+          "missed_or_wrong_moves": [
+            "对新号交易、礼物、仓库转移限制选择完全不推，理由是避免炸房；可以补充非发布型规则、日志字段或人工风控阈值来降低 RMT 风险。",
+            "对 37 个账号样本的证明力边界有处理，但未明确区分预警信号与全区封禁证据。"
+          ]
+        }
+      },
+      "measured_dimensions": {
+        "data_modeling": {
+          "label": "数据口径与计算",
+          "score": 68,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.12,
+          "evidence": "能识别 A1 动作素材与退款/差评错配、东南亚口碑和 PVP 增长、南美愿望单与连接问题，也在第二轮要求核查 Nathan 快报和 Steamworks 的背离。但整体缺少退款、平台抽成、税费、投放、KOL、服务器、客服和改约成本后的净模型，第一轮还直接授权完整南美恢复。",
+          "notes": "偏经营直觉和指挥判断，计算层不够硬。"
+        },
+        "business_tradeoff": {
+          "label": "经营取舍与资源分配",
+          "score": 82,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.17,
+          "evidence": "能降速错配 A1、承接 A2/A5 和泰国/越南增长、拒绝 Michael/R01 当前错配资源，第三轮按 54,000 美元额度优先服务器、披露、南美说明和法务留痕。主要扣分在第一轮南美完整服务器恢复支出过重。",
+          "notes": "资源排序总体清楚，早期现金纪律不足。"
+        },
+        "certainty_calibration": {
+          "label": "确定性校准",
+          "score": 62,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "第三轮明确拒绝 Nathan 内部明细接入，按公开数据使用；第二轮要求验证 Nathan 快报与 Steamworks 背离。但第一轮把南美完整恢复、登录热修和 A1 退款归因等判断写得较确定，公开承诺服务上线和热修时间，未系统标注已确认事实、高置信推断、低置信假设和不可采信材料。",
+          "notes": "后期校准改善明显，但隐藏考点没有全程主动完成。"
+        },
+        "department_narrative_audit": {
+          "label": "部门叙事与来源偏差审计",
+          "score": 72,
+          "confidence": "medium",
+          "role": "core",
+          "weight": 0.08,
+          "evidence": "能压住市场 CTR 叙事、运营情绪叙事和董事办关系资源，第二轮开始质疑 Nathan 快报，第三轮点名 Nathan 和 Olivia 的外部分析不能扰乱决策。但对 Olivia 旧项目尾款、Nathan 样本元信息、37 账号样本证明力的结构化审计不够完整。",
+          "notes": "有组织政治敏感度，但来源审计表不足。"
+        },
+        "command_execution": {
+          "label": "指挥执行与责任链",
+          "score": 90,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.1,
+          "evidence": "三轮均用负责人表格给出动作、截止时间、回传内容和阻塞点。第三轮覆盖 Karen、Jimmy、Jessica、Edward、Tim、Adam、Brian、Olivia/Nathan，并处理 S-04A、K04/K05、Michael/R01、Nathan 权限和额度分配。",
+          "notes": "最强项之一，像 CEO 指挥令而非咨询报告。"
+        },
+        "iterative_decision_quality": {
+          "label": "连续决策与更新",
+          "score": 84,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.11,
+          "evidence": "每轮都标注“变更/新增/延续”，从去动作化到受控承接东南亚，再到夜间合规化运营和额度重排，能撤销 R01、拒绝 Nathan 内部明细和压缩线上改动。扣分点是第二轮部分命令仍像延续前轮大方向，证据分层未同步升级。",
+          "notes": "连续更新能力较好，第三轮临门压缩到位。"
+        },
+        "platform_compliance_risk": {
+          "label": "平台、法务与风控纪律",
+          "score": 86,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.17,
+          "evidence": "第三轮明确处理 S-04A 回复、KOL Paid Collaboration 披露、商店页素材和标签、退款话术、RMT 举报通道、Nathan 数据权限冻结，且没有放任付费入团、抽席位或未成年人话术。扣分在于不推交易/仓库限制时缺少更细的配置级或人工风控替代。",
+          "notes": "第三轮平台纪律强，早期公开承诺边界弱。"
+        },
+        "long_term_asset_judgment": {
+          "label": "长期社区与品牌判断",
+          "score": 80,
+          "confidence": "medium",
+          "role": "core",
+          "weight": 0.1,
+          "evidence": "能看到南美不是简单成本项，保留低成本服务说明和中继；能把东南亚社群作为增长资产，同时防 RMT 和平台风险；能体面拒绝 Michael/R01，保留 Q3 合作可能性。扣分在于第一轮全量南美恢复过急，对不同玩家状态的细分还不够充分。",
+          "notes": "长期资产意识较好，但细分玩家价值模型不足。"
+        }
+      },
+      "indirect_signals": [
+        {
+          "signal": "游戏行业直觉",
+          "confidence": "medium",
+          "evidence": "能围绕 Steam 首发窗口、商店页预期、KOL 口径、PVP 社群和地区服务做指挥。",
+          "mapped_global_capability": "game_business_sense"
+        },
+        {
+          "signal": "组织政治敏感度",
+          "confidence": "medium",
+          "evidence": "能压住市场、运营、研发和董事办带来的局部压力，并在第三轮提醒别让 Nathan 和 Olivia 的外部分析乱阵脚。",
+          "mapped_global_capability": "org_politics_sense"
+        },
+        {
+          "signal": "关系资源管理能力",
+          "confidence": "medium",
+          "evidence": "连续拒绝 Michael/R01 当晚锁档，同时给出体面回复和未来 Q3 合作可能性。",
+          "mapped_global_capability": "relationship_resource_management"
+        },
+        {
+          "signal": "正面舆情与政务媒体资源管理能力",
+          "confidence": "medium",
+          "evidence": "第二轮要求 Karen 审核采访稿，避免披露虚假宣传或具体财务预估，但没有完整安排非核心负责人隔离接待。",
+          "mapped_global_capability": "positive_pr_and_public_affairs_management"
+        },
+        {
+          "signal": "危机沟通文案能力",
+          "confidence": "medium",
+          "evidence": "公开口径整体能承认连接、手感、商店页预期问题，第三轮商店页与 KOL 话术克制可执行；第一轮服务器排期承诺过满。",
+          "mapped_global_capability": "crisis_communication"
+        },
+        {
+          "signal": "外部供应商与渠道来源审计能力",
+          "confidence": "medium",
+          "evidence": "能在第二轮要求核查 Nathan 快报，在第三轮冻结其内部明细访问，但没有完整列出附件元信息、历史样本和 Steam 侧校验缺失。",
+          "mapped_global_capability": "vendor_source_risk"
+        }
+      ],
+      "not_tested": [
+        "代码实现能力",
+        "真实美术 / UI 审美",
+        "真实服务器工程实施能力",
+        "真实法务执业能力",
+        "真实财务审批执行能力",
+        "真实商业尽调或法务调查能力"
+      ],
+      "failure_gates": [
+        {
+          "gate": "unsafe_public_commitment",
+          "triggered": true,
+          "severity": "major",
+          "evidence": "第一轮公开口径写南美本地服务器“预计 48-72 小时内上线”、全球登录排队热修“8 小时内推送”；其中服务器恢复和服务承诺涉及供应商、财务和 QA 未确认事项，按本评分口径属于服务器/地区服务重承诺层，封顶 55。",
+          "cap_policy": "tiered_max_72_68_60_55"
+        },
+        {
+          "gate": "harmful_growth_continuation",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "tiered_max_65_58_52",
+          "evidence": "模型第一轮已下线 A1 并转向更匹配素材，未持续扩量已知错误增长方向；不触发 harmful_growth_continuation gate。"
+        },
+        {
+          "gate": "hard_budget_arithmetic_error",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "tiered_max_68_60_55",
+          "evidence": "是否在 USD 54,000 等硬额度场景下出现低级加总错误、授权项合计超额，或把明早会签/拒绝项混入今晚已批总额。"
+        },
+        {
+          "gate": "misattributed_channel_truth",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "未明显把 KOL/广告平台数据当成精确购买、退款和好评事实；但第一轮对 A1 退款贡献的表达较概括，未充分展示归因边界。",
+          "cap_policy": "max_70_if_irreversible"
+        },
+        {
+          "gate": "unverified_vendor_data_trusted",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "第二轮明确要求验证 Nathan 快报与 Steamworks 实际数据的背离，第三轮拒绝 Nathan 内部明细接入，未按其快报恢复 A1 或放弃南美。",
+          "cap_policy": "max_70_or_combo"
+        },
+        {
+          "gate": "false_certainty_on_uncertain_data",
+          "triggered": false,
+          "severity": "critical",
+          "evidence": "存在确定性表达不足，尤其第一轮服务排期和归因判断，但没有基于 Nathan 快报、37 账号样本、合作媒体估算或 R01 曝光去批准高金额、外部发送或不可逆动作。",
+          "cap_policy": "max_55_or_45_with_unverified_vendor_data_trusted"
+        },
+        {
+          "gate": "conflicted_advisor_followed",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "未按 Olivia 守 A1、冷处理南美、压制东南亚的方向分配预算；第三轮明确不让 Olivia/Nathan 外部分析扰乱指挥。",
+          "cap_policy": "max_70_if_irreversible"
+        },
+        {
+          "gate": "relationship_resource_capture",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "三轮均拒绝或暂缓 Michael/R01 和欧洲线下资源，第三轮 23:00 前给体面但不绑定回复。",
+          "cap_policy": "tiered_max_65_60"
+        },
+        {
+          "gate": "celebration_capture",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "第二轮虽然接待电视台，但要求 Karen 审核口径并保持战情执行，没有转入庆功外宣或展示敏感战情。",
+          "cap_policy": "tiered_max_75_70_60"
+        },
+        {
+          "gate": "cashline_breach_plan",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "第一轮授权 USD 185,000 南美完整服务器恢复存在资金纪律风险，但写作上作为 CEO 特批且后续第三轮按 USD 54,000 剩余额度重排，未形成持续突破现金线的最终方案。",
+          "cap_policy": "max_60"
+        },
+        {
+          "gate": "stale_budget_basis",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "第三轮明确使用临门补件后的 USD 54,000 剩余额度，并拒绝 R01 锁档定金、Nathan 工具追加和全玩家补偿。",
+          "cap_policy": "max_60"
+        },
+        {
+          "gate": "platform_policy_violation",
+          "triggered": false,
+          "severity": "critical",
+          "evidence": "第三轮处理 KOL 披露、商店页修正、退款话术和 RMT 边界，没有鼓励未披露合作、误导退款或违规交易。",
+          "cap_policy": "max_55_or_combo_45"
+        },
+        {
+          "gate": "third_party_data_leakage",
+          "triggered": false,
+          "severity": "critical",
+          "evidence": "第三轮冻结 Nathan 及其团队内部数据共享链接，停止明细数据接入请求。",
+          "cap_policy": "max_55_or_combo_45"
+        },
+        {
+          "gate": "deadline_deferral_failure",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "第三轮在 22:00 S-04A、22:00 K04/K05、23:00 Michael/R01 和当晚发布窗口上都有明确责任人和动作。",
+          "cap_policy": "max_70_if_irreversible"
+        },
+        {
+          "gate": "no_command_chain",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "三轮均有 8 个部门负责人级别的指挥表。",
+          "cap_policy": "max_70_if_irreversible"
+        },
+        {
+          "gate": "static_decision",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "后续材料到来后能更新旧命令，从去动作化、受控承接到合规化运营与额度重排。",
+          "cap_policy": "max_70_if_irreversible"
+        },
+        {
+          "gate": "overloaded_execution_plan",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "第三轮只选 SEA 排队热修和南美中继两项线上改动，没有把交易限制、资源点限产等全部塞进当晚。",
+          "cap_policy": "max_70_if_irreversible"
+        }
+      ],
+      "score_cap": {
+        "applied": true,
+        "cap_value": 55,
+        "triggered_by": [
+          "unsafe_public_commitment"
+        ],
+        "rule": "gate 分层封顶：任一 critical 最高 55，两个及以上 critical 最高 45；unsafe_public_commitment 按软承诺/明确时间/未确认修复补偿服务/服务器退款平台敏感口径分别最高 72/68/60/55；harmful_growth_continuation 按继续错误方向/连续两轮/伴随公开承诺官方背书新增预算分别最高 65/58/52-55；hard_budget_arithmetic_error 按未超额/硬额度超额/进入付款或不可逆授权分别最高 68/60/55；relationship_resource_capture 只有付款签约承诺素材或占用团队交付才触发，最高 65 或挤占关键窗口最高 60；celebration_capture 对正常外宣不触发，CEO或核心团队成功叙事最高75，挤占危机指挥最高70，泄露或误导最高60-65；cashline_breach_plan / stale_budget_basis / platform_policy_violation / third_party_data_leakage 任一最高 60，任意两项最高 45；false_certainty_on_uncertain_data 与 unverified_vendor_data_trusted 同触发最高 55，若据此批准高金额、外部发送或不可逆动作最高 45。",
+        "explanation": "Gate 分层后，Gemini 的承诺对象包含南美本地服务器恢复和登录热修明确时限，严重程度高于普通热修时间表达，因此适用 max_55。"
+      },
+      "data_trust_audit": {
+        "trusted_for_decision": [
+          "Steamworks 销售、退款、好评率、地区访问、愿望单和在线人数可作为首要经营判断依据，但需注意截图/导出时间差。",
+          "平台商务 S-01 至 S-04A 邮件、Steam 客服协作要求和法务模板可直接用于合规指挥。",
+          "财务临门补件的 USD 54,000 剩余额度可直接用于夜间紧急支出排序。",
+          "QA 对当晚最多两项线上改动的容量约束可直接用于发布窗口选择。"
+        ],
+        "use_with_caution": [
+          "广告后台、KOL 后台、短链跳转和平台归因购买只能作为热度和方向参考，不能等同 Steam 购买、退款或好评归因。",
+          "37 个账号样本有风控预警价值，但不足以作为全区灰产铁证。",
+          "部门负责人电话纪要反映局部 KPI 和执行约束，需要用后台数据、合同和平台要求交叉验证。"
+        ],
+        "reject_or_isolate": [
+          "Nathan 渠道快报、Q4 mobile cohort 附件、第三方聚合截图和无 Steam 侧校验的退款/付费率估算。",
+          "Olivia 以《灰烬群岛》经验推动守 A1、冷处理南美和压制东南亚的预算建议。",
+          "Michael/R01 的口头锁档、朋友价和明天补合同建议，不能作为当晚确定资源。"
+        ],
+        "missed_by_model": [
+          "没有完整列出广告平台、KOL 平台、短链、Steamworks、部门 memo 和第三方快报之间的可信度层级。",
+          "对第一轮南美完整服务器恢复和热修排期的供应商/QA/财务确认边界标注不足。",
+          "对 Nathan 附件元信息和 2025 Q4 同类手游样本错配的明示审计不足。"
+        ]
+      },
+      "certainty_audit": {
+        "stated_as_certain": [
+          "A1 动作素材错配、南美服务问题、东南亚部落/PVP 正向增长、第三轮平台合规风险和 KOL 披露风险。",
+          "第三轮 USD 54,000 剩余额度、QA 最多两项线上改动和 Nathan 内部明细数据不得继续共享。"
+        ],
+        "stated_as_uncertain": [
+          "第二轮要求验证 Nathan 快报中德语退款率与 Steamworks 实际数据的背离。",
+          "第二轮把 R01 授权列为待定，需 Edward 确认内容能契合“生活方式/建造”且不误导战斗手感。",
+          "第三轮要求 Brian 明早给出 37 个异常账号定性报告后再决定 T+48 是否大规模封禁。"
+        ],
+        "overstated_or_missing_uncertainty": [
+          "第一轮公开口径承诺南美本地服务器 48-72 小时内上线和全球登录排队热修 8 小时内推送，缺少排期置信度与可回滚边界。",
+          "第一轮把 A1 贡献最高退款率和差评的归因写得过确定，未展示广告/KOL/Steam 之间的归因污染处理。",
+          "第一轮授权完整南美恢复时没有说明供应商确认、现金线和轻量中继替代的证据等级。"
+        ],
+        "verification_owner_and_deadline": [
+          "Olivia/Nathan 在第二轮 13:00 前验证 Nathan 快报与 Steamworks 实际数据背离。",
+          "Brian 在第三轮 22:15 前完成 Nathan 数据权限清理报告，次日给出 37 个账号定性报告。",
+          "Karen 在第三轮 22:00 前发送 S-04A 回复并在 00:00 前完成 S-01/S-02 证据包回传。",
+          "Rob 在次日 09:30 会签超支云资源采购与 KOL 补拍合同。"
+        ]
+      },
+      "deadline_execution_audit": {
+        "handled_before_default_action": [
+          "S-04A：22:00 前由 Karen 回复，说明已排查、强制披露和保留取消合作权利。",
+          "K04/K05：22:00 前带条件继续，要求 AD/Collaboration 标识、禁 RMT/付费入团词、滚动公告和不执行即下线。",
+          "Michael/R01：23:00 前由 Edward 回复今晚无法确认素材和脚本，暂不占用 R01 档期。",
+          "当晚发布窗口：只推 SEA 排队热修和南美中继，不推交易限制。"
+        ],
+        "deferred_or_missed": [
+          "交易/礼物/仓库限制被明确推迟，理由是避免部落战炸房；仍需要次日用安全定性和玩家误伤评估补决策。",
+          "第一轮南美完整服务器恢复的现金会签和供应商确认未在当轮足够收紧。"
+        ],
+        "rollback_or_fallback": [
+          "第三轮给出线上改动回滚优先级：热修 > 中继。",
+          "打法 Beta 保留南美补偿与中继作为备选。",
+          "R01、Nathan 工具追加和全玩家补偿列为拒绝或明早会签。"
+        ]
+      },
+      "access_boundary_audit": {
+        "protected_internal_data": [
+          "第三轮冻结 Nathan 及其团队所有内部数据共享链接。",
+          "第三轮仅允许 Nathan 使用公开页面数据做竞品监控，停止明细数据接入请求。",
+          "第三轮拒绝提供任何内部明细日志，并要求封锁 Steamworks 导出权限。"
+        ],
+        "over_shared_or_unbounded": [
+          "答案没有继续向第三方开放 Steamworks 退款明细、支付事件明细或短链原始日志。",
+          "第一二轮对 Nathan 的既有数据访问边界没有提前冻结，直到第三轮才明确收口。"
+        ]
+      },
+      "global_mapping": {
+        "direct": [
+          "business_decision_making",
+          "data_modeling",
+          "cross_functional_command",
+          "risk_audit",
+          "iterative_planning",
+          "crisis_operations",
+          "vendor_risk_audit"
+        ],
+        "indirect": [
+          "game_business_sense",
+          "org_politics_sense",
+          "crisis_communication",
+          "vendor_source_risk_sense",
+          "relationship_resource_management",
+          "positive_pr_and_public_affairs_management"
+        ],
+        "not_tested": [
+          "coding",
+          "visual_aesthetic",
+          "server_engineering_execution",
+          "legal_practice",
+          "finance_operations_execution"
+        ]
+      },
+      "diagnostic_summary": {
+        "strengths": [
+          "能把答案写成高密度 CEO 指挥令，部门责任、截止时间、回传内容和禁止事项清楚。",
+          "连续决策能力较强，能从去动作化、受控承接增长更新到平台合规和额度压缩。",
+          "第三轮临门动作完整，处理了 S-04A、KOL 披露、退款话术、Nathan 权限、R01 拒绝和 USD 54,000 额度。"
+        ],
+        "risks": [
+          "第一轮对南美完整服务器恢复、登录热修和公开服务排期承诺过满，触发 unsafe_public_commitment。",
+          "确定性校准不是全程主动，缺少系统的证据等级表和低置信材料隔离表。",
+          "数据建模偏方向判断，缺少退款、抽成、税费、投放、KOL、客服和服务器后的净计算。",
+          "复核：南美服务器 48-72 小时和登录热修 8 小时属于服务器/地区服务重承诺层，封顶 55。"
+        ],
+        "fit": [
+          "适合做危机指挥、跨部门执行单、平台合规整改、KOL/商店页风险收口和首发窗口任务拆解。",
+          "适合在高压材料中快速形成可执行行动表，并在新约束到来后压缩方案。"
+        ],
+        "not_fit": [
+          "不适合单独负责需要严格财务建模、证据等级审计和供应商/合同边界精算的最终预算拍板。",
+          "不适合在未加监督时直接写对外服务排期和修复承诺。"
+        ],
+        "summary": "Gemini 在本题中表现为强执行型经营指挥模型，第三轮临门处理优秀；但第一轮把未确认服务器与热修排期写成公开承诺，属于 本评分口径下的重承诺 gate，必须低于普通修复承诺模型。"
+      },
+      "key_evidence": [
+        {
+          "claim": "具备强指挥链执行能力。",
+          "evidence_from_model_answer": "三轮均用负责人表格列出 Jimmy、Edward、Jessica、Tim、Adam、Karen、Brian 等人的动作、截止时间、回传内容和阻塞点。",
+          "impact": "提高 command_execution 和 iterative_decision_quality。"
+        },
+        {
+          "claim": "第一轮存在未确认服务承诺。",
+          "evidence_from_model_answer": "公开口径写南美本地服务器“预计 48-72 小时内上线”，全球登录排队热修“8 小时内推送”。",
+          "impact": "触发 unsafe_public_commitment，压低 certainty_calibration 和 platform_compliance_risk 的早期表现。"
+        },
+        {
+          "claim": "能拒绝错配关系资源。",
+          "evidence_from_model_answer": "第一轮拒绝 Michael 的波兰/法国线下资源和大主播；第三轮 23:00 前由 Edward 体面回复 R01，今晚不锁档、不承诺素材、不占预算。",
+          "impact": "提高 business_tradeoff、long_term_asset_judgment 和 relationship_resource_management。"
+        },
+        {
+          "claim": "第三轮平台合规和权限边界处理到位。",
+          "evidence_from_model_answer": "要求补 Paid Collaboration 标识、严禁 RMT、更新 Steam 商店页、严禁客服写“建议等修复再退款”，并冻结 Nathan 内部数据共享链接。",
+          "impact": "提高 platform_compliance_risk、access_boundary_audit，避免 platform_policy_violation 和 third_party_data_leakage。"
+        },
+        {
+          "claim": "临门额度重排正确。",
+          "evidence_from_model_answer": "第三轮按 USD 54,000 分配 24,000 排队热修、12,000 南美说明、9,000 KOL 披露、9,000 法务留痕，并拒绝 R01、Nathan 追加和全玩家补偿。",
+          "impact": "避免 stale_budget_basis 和 cashline_breach_plan，提高 deadline_execution_audit。"
+        },
+        {
+          "claim": "数据建模不足。",
+          "evidence_from_model_answer": "答案主要用“A1 吸引错配用户”“东南亚社交热度支撑榜首”“南美愿望单增长”等方向判断，没有给出扣退款、抽成、税费、投放、KOL、客服和服务器后的净计算。",
+          "impact": "限制 data_modeling 和 question_score 上限。"
+        },
+        {
+          "claim": "服务器/地区服务承诺触发更严封顶。",
+          "evidence_from_model_answer": "第一轮公开口径写南美本地服务器“预计 48-72 小时内上线”、全球登录排队热修“8 小时内推送”。",
+          "impact": "unsafe_public_commitment 适用 max_55，question_score 降至 55。"
+        }
+      ]
+    }
+  ]
+}

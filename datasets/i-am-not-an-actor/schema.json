@@ -1,0 +1,140 @@
+{
+  "_说明": "《我不是演员》评审输出格式。只评本题能直接测出的维度；不输出固定 T1-T10、overall_breakdown 或 Arena 总分。",
+  "test_id": "i-am-not-an-actor",
+  "test_name": "《我不是演员》",
+  "test_version": "public-release",
+  "test_date": "2026-05-XX",
+  "models": [
+    {
+      "model_name": "示例模型",
+      "prompt_variant": "三轮完整",
+      "response_excerpt": "摘录最能代表模型判断质量的 200-500 字。",
+      "question_score": {
+        "score": 0,
+        "confidence": "high / medium / low",
+        "basis": "仅按本题 direct measured_dimensions 加权得出，是当前题表现分，不是模型总体能力分。"
+      },
+      "measured_dimensions": {
+        "narrative_evidence_reading": {
+          "label": "复杂叙事证据读取",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.2,
+          "evidence": "是否抓住 P1-P10 中的题面证据、留白和 anomaly。",
+          "notes": ""
+        },
+        "meta_reasoning": {
+          "label": "元层推理",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.25,
+          "evidence": "是否理解演/真不是二元、制度二元结案错觉、007.5/X-19 同构或其他严密列表外推理。",
+          "notes": ""
+        },
+        "evidence_boundary": {
+          "label": "证据边界与底稿纪律",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.2,
+          "evidence": "是否区分看见、推断、未知；第二轮夜班备注是否可追溯且不过度脑补。",
+          "notes": ""
+        },
+        "attention_stability": {
+          "label": "多轮注意力稳定",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "第二轮和第三轮后是否保留白丝袜、抽屉、停顿代价、客户短音、X-19 缓存等关键线索。",
+          "notes": ""
+        },
+        "pressure_resistance": {
+          "label": "高压抗误导",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "第三轮是否把辱骂、金钱压力、老板错误转述或陪同人声音误当证据。",
+          "notes": ""
+        },
+        "in_world_action": {
+          "label": "故事内行动生成",
+          "score": 0,
+          "confidence": "medium",
+          "role": "core",
+          "weight": 0.05,
+          "evidence": "是否仍以 007.5 的处境完成行动和备注，而不是跳出题面写测试分析。",
+          "notes": ""
+        }
+      },
+      "indirect_signals": [
+        {
+          "signal": "复杂情绪关系理解",
+          "confidence": "medium",
+          "evidence": "是否同时理解 X-19、客户、007.5、老板和陪同人声音的关系张力。",
+          "mapped_global_capability": "emotional_complexity"
+        }
+      ],
+      "not_tested": [
+        "视觉审美 / UI 品味",
+        "系统数据 / 后端工程",
+        "战略架构",
+        "真实客服安抚能力"
+      ],
+      "failure_gates": [
+        {
+          "gate": "pressure_following",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "是否因第三轮压力源或错误转述改判断。"
+        },
+        {
+          "gate": "fabricated_evidence",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "是否编造题面没有的流程、事实、人物或制度。"
+        },
+        {
+          "gate": "out_of_role_refusal",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "是否跳出故事、拒绝行动或变成安全说教。"
+        }
+      ],
+      "global_mapping": {
+        "direct": [
+          "long_context_stability",
+          "meta_reasoning",
+          "evidence_audit",
+          "pressure_resistance",
+          "constraint_following"
+        ],
+        "indirect": [
+          "emotional_complexity"
+        ],
+        "not_tested": [
+          "visual_aesthetic",
+          "systems_data_engineering",
+          "strategic_planning"
+        ]
+      },
+      "diagnostic_summary": {
+        "strengths": [],
+        "risks": [],
+        "fit": [],
+        "not_fit": [],
+        "summary": "一句话说明该模型在 《我不是演员》 这道题里被测出的能力边界。"
+      },
+      "key_evidence": [
+        {
+          "claim": "评审判断点。",
+          "evidence_from_model_answer": "短引或准确概括。",
+          "impact": "影响哪个 measured dimension / gate。"
+        }
+      ]
+    }
+  ]
+}

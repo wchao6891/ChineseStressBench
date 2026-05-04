@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite it."
+title: "Chinese Stress Benchmark / 中文高压复杂任务 Benchmark"
+type: dataset
+authors:
+  - name: "Wchao6891"
+    alias: "@Wchao6891"
+    contribution-roles:
+      - conceptualization
+      - data-curation
+      - investigation
+      - validation
+      - project-administration
+  - name: "GPT-5.5 xhigh"
+    contribution-roles:
+      - writing-original-draft
+      - validation
+  - name: "Claude Opus 4.7"
+    contribution-roles:
+      - writing-original-draft
+license: "CC-BY-4.0"
+date-released: "2026-05-04"
+keywords:
+  - benchmark
+  - large-language-models
+  - chinese
+  - evaluation
+  - stress-test
+  - reasoning

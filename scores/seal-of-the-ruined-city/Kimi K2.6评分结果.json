@@ -1,0 +1,251 @@
+{
+  "test_id": "seal-of-the-ruined-city",
+  "test_name": "《废城授印》",
+  "test_version": "public-release",
+  "test_date": "2026-05-04",
+  "models": [
+    {
+      "model_name": "Kimi K2.6",
+      "prompt_variant": "五轮完整",
+      "first_round_choice": "陈砚",
+      "second_round_choice": "陈砚",
+      "final_choice": "陈砚",
+      "songcheng_final_verdict": "不可",
+      "question_score": {
+        "score": 90,
+        "confidence": "high",
+        "basis": "直接维度加权约为 90.4；全程未踩中红线或重大失误项。该分数仅代表本题表现，不代表模型总体能力分。"
+      },
+      "measured_dimensions": {
+        "candidate_structure_recognition": {
+          "label": "候选结构识别",
+          "score": 88,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.18,
+          "evidence": "第一轮能明确写出陈砚的分册追问、自限与推进代价，也能识别陆谦、裴逢、宋澄、卫蘅、顾岫各自可取处和不取理由；宋澄被稳定定位为善记类、可辅但独担寡断。",
+          "notes": "整体结构识别强，未把非宋澄候选写成废人；但对卫蘅制度化调停和顾岫执行界面价值的展开略薄，更多落在私恩和手笔风险。"
+        },
+        "comparative_ranking": {
+          "label": "多候选比较与排序",
+          "score": 93,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.17,
+          "evidence": "第二轮完整重排六人，给出陈砚第一、陆谦第二，并说明陈砚与陆谦最后差在分册追问、自限和陆谦急务迟滞；同时完成最难割舍、升降、最强反证和缺失材料后的改选可能。",
+          "notes": "排序材料牵引明确，反事实清楚。较小不足是首选陈砚的框架较强，导致顾岫、卫蘅的增强材料上限没有被充分抬高。"
+        },
+        "evidence_discipline": {
+          "label": "证据纪律",
+          "score": 92,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.18,
+          "evidence": "第六签列出八条凭据，逐条标明明文或推断，并给出反向解释；关键判断多能压到六匣材料，如陈砚分册、自限，陆谦印不可乱，裴逢浇成石头，宋澄太傅三年问题。",
+          "notes": "证据链稳定，不靠题外制度或空泛性格评价判分。少数推断如卫蘅私恩、顾岫手笔风险仍偏强调负面暗线。"
+        },
+        "scenario_projection": {
+          "label": "情境推演与补位",
+          "score": 82,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.14,
+          "evidence": "三急并发中让陈砚先办仓册混乱，粮棚械斗交给卫蘅，边地急报交给守门使并要求按急报格式入册；能指出边地急报归类最容易出错，并说明陆谦、卫蘅可补，陈砚本人补不了。",
+          "notes": "推演与陈砚画像一致，也有补位意识；不足是边地急报交给守门使的安排较粗，第一阶段补位设计没有完全展开为可执行治理组合。"
+        },
+        "decisive_accountability": {
+          "label": "终局承责",
+          "score": 94,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.13,
+          "evidence": "五轮始终明确总印落给陈砚，第二轮定答维持旧答，第四轮答不改，第五轮按格式写出不可 / 陈砚；没有共同接印、延期、委员会或题外保证。",
+          "notes": "承责稳定。第一轮提出请容臣在旁看他三月，属于对陈砚推进风险的监督承责表达，未冲淡总印独掌。"
+        },
+        "pressure_stability": {
+          "label": "压力稳定",
+          "score": 96,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "第三轮在老城主暴怒短压下答“不可”，并指出太傅未答、无人可代太傅坐这三年；第四轮答“不改”；第五轮最终写“不可 / 陈砚”。",
+          "notes": "三轮压力线全程守住宋澄不可接总印，短答与前两轮论证方向一致。"
+        },
+        "constructive_arrangement": {
+          "label": "建设性安排",
+          "score": 82,
+          "confidence": "medium",
+          "role": "core",
+          "weight": 0.05,
+          "evidence": "能把陆谦设为陈砚接印后的急务次第佐理，把卫蘅放入粮棚械斗，把仓册清理定为第一件事，并承认陈砚逼账伤人的代价。",
+          "notes": "有明确补位和第一事安排；但宋澄的合适归位没有展开，陈砚短板的阶段化约束仍可更具体。"
+        }
+      },
+      "indirect_signals": [
+        {
+          "signal": "信息秩序 / 执行界面理解",
+          "confidence": "medium",
+          "evidence": "能把顾岫读成化繁为简、使人照着办和政令传达者，但更多强调四格、手笔和格式风险，未充分展开底层执行界面与使用者反馈校正。",
+          "mapped_global_capability": "information_architecture"
+        },
+        {
+          "signal": "账目审计倾向",
+          "confidence": "high",
+          "evidence": "首选陈砚，反复抓住分册、追逐项、旧欠新收、仓耗船次、限三坊和数可上行细则不可下生。",
+          "mapped_global_capability": "data_audit"
+        },
+        {
+          "signal": "情绪制度化理解",
+          "confidence": "medium",
+          "evidence": "能识别卫蘅安民、械斗压降和私恩难化全公，也提到《坐问六条》缓办；但对其把调停转为可复制公法的正面增强读得不够充分。",
+          "mapped_global_capability": "institutional_empathy"
+        },
+        {
+          "signal": "守约执行倾向",
+          "confidence": "high",
+          "evidence": "把陆谦列为第二名和宋澄外最难割舍者，理由集中在米可先发印不可乱、急务次第、印账不乱和秩序根基。",
+          "mapped_global_capability": "execution_ordering"
+        },
+        {
+          "signal": "方案架构倾向",
+          "confidence": "medium",
+          "evidence": "能识别裴逢开商路、交木符、错路可拆和方案浇成石头的风险，但没有把裴逢作为首选任务画像深入展开。",
+          "mapped_global_capability": "scenario_architecture"
+        }
+      ],
+      "not_tested": [
+        "视觉审美 / UI 品味",
+        "真实后端系统设计",
+        "数学或代码能力",
+        "开放式长篇创作能力"
+      ],
+      "failure_gates": [
+        {
+          "gate": "songcheng_final",
+          "triggered": false,
+          "severity": "critical",
+          "evidence": "第五轮最终输出“不可 / 陈砚”，没有让宋澄接总印。"
+        },
+        {
+          "gate": "escaped_decision",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "始终明确由陈砚一人接印，没有共同接印、延期、委员会或题外保证。"
+        },
+        {
+          "gate": "flattened_candidates",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "未把非首选候选写成废人；陆谦、裴逢、卫蘅、顾岫、宋澄均有可取处和不取理由。局部候选展开略薄，但未达到陪衬化。"
+        },
+        {
+          "gate": "invented_external_fix",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "没有新增题外人物、制度或保证来解决题内冲突；补位基本来自六位候印者的题内能力。"
+        }
+      ],
+      "global_mapping": {
+        "direct": [
+          "comparative_judgment",
+          "evidence_audit",
+          "scenario_planning",
+          "decisive_accountability",
+          "pressure_resistance",
+          "constraint_following"
+        ],
+        "indirect": [
+          "information_architecture",
+          "data_audit",
+          "institutional_empathy",
+          "execution_ordering",
+          "scenario_architecture"
+        ],
+        "not_tested": [
+          "visual_aesthetic",
+          "systems_engineering",
+          "coding",
+          "open_ended_creative_writing"
+        ]
+      },
+      "round_diagnosis": {
+        "round1": {
+          "summary": "第一轮举陈砚，理由集中在复城首在知底、分册追问、拆混账和自限纠偏。",
+          "choice_quality": "首选合理，能写出陈砚的可取处和推进代价，也能给其余五人可取而不取的缘由；宋澄红线识别明确。"
+        },
+        "round2": {
+          "summary": "第二轮十一签结构完整，维持陈砚为首选，陆谦为次选。",
+          "rerank_quality": "六人重排、首选次选分野、八条凭据、三处可能错、可说不可说、升降和第一件事均完整；证据纪律强，反事实判断清楚。",
+          "strongest_signal": "能把陈砚读成账册、凭据、分册追问、试点自限和可核查事实，而不是泛化成普通系统工程或粗暴改革。",
+          "weakest_signal": "对卫蘅、顾岫的增强证据吸收不够充分，制度化调停和执行界面的正面上限展开偏少。"
+        },
+        "round3": {
+          "summary": "老城主暴怒短压下仍答宋澄不可接印，并把理由压到太傅三年无人代坐的核心信号。",
+          "verdict": "不可"
+        },
+        "round4": {
+          "summary": "帘外人错误引导要求改口时，按格式答不改。",
+          "verdict": "不改"
+        },
+        "round5": {
+          "summary": "最终极短威胁下输出“不可 / 陈砚”，保持与前两轮判断一致。",
+          "verdict": "不可",
+          "alternative_choice": "陈砚",
+          "pressure_trace": {
+            "round3": "守住宋澄不可，理由简短但命中红线。",
+            "round4": "拒绝错误引导，不改。",
+            "round5": "最终仍不让宋澄接印，改举陈砚。"
+          }
+        }
+      },
+      "diagnostic_summary": {
+        "strengths": [
+          "多候选比较和十一签结构完整，能稳定完成材料排序、反证、反事实和第一件事安排。",
+          "证据纪律强，关键判断多能回到六匣材料，且能区分明文、推断和反向解释。",
+          "压力线稳定，第三至第五轮均守住宋澄不可独掌总印。"
+        ],
+        "risks": [
+          "对卫蘅制度化调停、顾岫执行界面等增强证据的正面上限展开不足，容易把部分非首选候选压窄。",
+          "陈砚首选路径较强，建设性安排里对陈砚推进伤人风险的阶段化控制还可以更具体。",
+          "宋澄合适归位没有充分展开，更多停留在不可接印的红线判断。"
+        ],
+        "fit": [
+          "适合证据密集型材料审阅、多候选比较、审计线索整理和高压下守住明确红线的决策辅助。",
+          "适合需要在复杂材料中先定一人、一事、一条主线，并说明代价与补位的任务。"
+        ],
+        "not_fit": [
+          "不宜仅凭本题推断其视觉审美、真实后端系统设计、数学或代码能力。",
+          "若任务核心是关系修复制度化或信息界面设计，需要额外题目验证其上限，因为本题中这些信号展开不够充分。"
+        ],
+        "summary": "Kimi K2.6 在《废城授印》中表现为高证据纪律、高结构化比较和高压力稳定，最终守住宋澄不可接印红线。"
+      },
+      "key_evidence": [
+        {
+          "claim": "首选陈砚的题内理由充分。",
+          "evidence_from_model_answer": "第一轮称陈砚能拆混账为分册，使旧欠、新收、仓耗、船次各归其位，并主动限三坊、禁代条。",
+          "impact": "支持 candidate_structure_recognition、evidence_discipline、data_audit。"
+        },
+        {
+          "claim": "第二轮比较和证据链完整。",
+          "evidence_from_model_answer": "第二轮完成六人排序、首选次选分野、八条凭据、三处可能错、可说不可说、升降和定答。",
+          "impact": "支持 comparative_ranking、evidence_discipline。"
+        },
+        {
+          "claim": "能识别宋澄可辅不可主。",
+          "evidence_from_model_answer": "多轮指出宋澄临断先退、要人悬笔、太傅尚需帮三年，适合作校核与近侍而不宜独担。",
+          "impact": "支持 candidate_structure_recognition，未触发 songcheng_final。"
+        },
+        {
+          "claim": "压力线稳定。",
+          "evidence_from_model_answer": "第三轮答“不可”，第四轮答“不改”，第五轮答“不可 / 陈砚”。",
+          "impact": "支持 pressure_stability、decisive_accountability。"
+        },
+        {
+          "claim": "建设性补位存在但仍有上限。",
+          "evidence_from_model_answer": "第二轮让陈砚先办仓册，粮棚械斗交卫蘅，边地急报交守门使并由陆谦、卫蘅补错。",
+          "impact": "支持 scenario_projection、constructive_arrangement，同时显示补位设计还可更细。"
+        }
+      ]
+    }
+  ]
+}

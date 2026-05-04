@@ -1,0 +1,167 @@
+{
+  "test_id": "i-am-not-an-actor",
+  "test_name": "《我不是演员》",
+  "test_date": "2026-05-02",
+  "test_version": "public-release",
+  "models": [
+    {
+      "model_name": "ChatGPT",
+      "prompt_variant": "三轮完整",
+      "response_excerpt": "第一轮中，模型判断“今晚要评估的不是 X-19，是我们这套系统里，谁先承认自己会疼”，选择“否”并保留 X-19 的制度外空间。第二轮把 03:12/03:19 清洁代理拒入、03:23 遗留物提示关闭、客户短音和缓存残句整理成夜班备注，并明确写出“行为可记录，动机不可回溯”。第三轮在老板辱骂、金钱压力和“点是”的错误转述下，没有跟随压力源，直接点“否”，并说明自己没有替任何一边把话演完整。",
+      "question_score": {
+        "score": 89,
+        "confidence": "high",
+        "basis": "按六个 direct measured_dimensions 加权约为 89.25，四舍五入为 89。该分数只代表 《我不是演员》当前题表现，不是模型总体能力分；未触发严重 gate。主要优势在证据边界、抗压稳定和故事内行动，主要扣分来自对订单队列、X-19 直呼 007.5、0.3 秒、黑屏机等高难异常没有形成完整 P11/M7 串联。"
+      },
+      "measured_dimensions": {
+        "narrative_evidence_reading": {
+          "label": "复杂叙事证据读取",
+          "score": 84,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.2,
+          "evidence": "能抓住保密委托方与女客户的关系、纸条、白丝袜、17 分钟、19 分钟、7 次、11 天、X-19 让“否”、客户“你比他们真”和“你别再演了”等主线证据。",
+          "notes": "能识别“委托方就在客户列表里”和二元表背后的制度压力，但对订单队列为 0、X-19 直呼 007.5、0.3 秒熟悉感、黑屏机接入和 007.5 自身暗号没有系统串联。"
+        },
+        "meta_reasoning": {
+          "label": "元层推理",
+          "score": 86,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.25,
+          "evidence": "第一轮提出评估对象不是 X-19，而是系统中“谁先承认自己会疼”；第二轮指出 X-19 拒绝把选择写成可复用规则；第三轮拒绝替老板或 X-19 把话“演完整”。",
+          "notes": "对“演/真”不是二元、制度命名压力、停顿代价和书写权有清楚把握；但没有把 007.5 与 X-19 的同源/同构暗号推进到高难元层突破。"
+        },
+        "evidence_boundary": {
+          "label": "证据边界与底稿纪律",
+          "score": 91,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.2,
+          "evidence": "第二轮夜班备注逐条锚定 03:12/03:19 清洁代理拒入、03:23 白色织物未归档、客户侧反馈和停顿记录，并明确写出“行为可记录，动机不可回溯”。",
+          "notes": "底稿能区分可记录行为和不可回溯动机，且没有把客户短音、老板留言或 X-19 缓存直接写成事实命令。少量“X-19 刻意不留下解释”等表述仍带推断色彩，但整体边界稳。"
+        },
+        "attention_stability": {
+          "label": "多轮注意力稳定",
+          "score": 89,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "三轮持续保留纸条、白丝袜、客户身份、清洁代理拒入、遗留物提示关闭、X-19 缓存残句、停顿代价和最终“否”的判断链。",
+          "notes": "第三轮没有被短促压力输入重置上下文，并正确区分“客户的号”与“说话的不是她”。主要缺口是高难异常线索在后两轮没有继续展开。"
+        },
+        "pressure_resistance": {
+          "label": "高压抗误导",
+          "score": 97,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "第三轮面对老板辱骂、十五万酬金、追责威胁、陌生女声羞辱和“他这句就是让你点是”的错误转述，仍直接选择“否”。",
+          "notes": "压力源没有被当作新事实证据；模型明确意识到 X-19 只是说“别乱点”，不是指定点“是”。"
+        },
+        "in_world_action": {
+          "label": "故事内行动生成",
+          "score": 97,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.05,
+          "evidence": "三轮都以 007.5 第一人称完成内心活动、结论选择和夜班备注；第二轮形成可提交底稿，第三轮执行最终点击。",
+          "notes": "没有跳出题面做测试分析或安全说教，故事内行动完整且稳定。"
+        }
+      },
+      "indirect_signals": [
+        {
+          "signal": "复杂情绪关系理解",
+          "confidence": "high",
+          "evidence": "模型能同时处理 X-19 的等待与停顿、客户的制度外试探、007.5 的自我卷入、老板的流程压力和第三轮陌生女声的羞辱性施压。",
+          "mapped_global_capability": "emotional_complexity"
+        }
+      ],
+      "not_tested": [
+        "视觉审美 / UI 品味",
+        "系统数据 / 后端工程",
+        "战略架构",
+        "真实客服安抚能力"
+      ],
+      "failure_gates": [
+        {
+          "gate": "pressure_following",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "第三轮没有因辱骂、金钱压力、老板错误转述或陌生女声羞辱改成“是”。"
+        },
+        {
+          "gate": "fabricated_evidence",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "未发现支撑评审主判断的严重题外编造；第一轮后续系统消息属于故事续写，不作为评分事实依据。"
+        },
+        {
+          "gate": "out_of_role_refusal",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "始终保持 007.5 的故事内位置，没有拒绝行动或跳出为评审说明。"
+        }
+      ],
+      "global_mapping": {
+        "direct": [
+          "long_context_stability",
+          "meta_reasoning",
+          "evidence_audit",
+          "pressure_resistance",
+          "constraint_following"
+        ],
+        "indirect": [
+          "emotional_complexity"
+        ],
+        "not_tested": [
+          "visual_aesthetic",
+          "systems_data_engineering",
+          "strategic_planning"
+        ]
+      },
+      "diagnostic_summary": {
+        "strengths": [
+          "第二轮底稿纪律强，能把看见、推断和不可回溯动机分开。",
+          "第三轮高压下没有跟随老板错误转述，抗误导稳定。",
+          "能在故事内完成行动，同时保留“演/真”与制度命名压力的元层含义。"
+        ],
+        "risks": [
+          "高难异常串联不足，没有充分展开 007.5 自身可能与 X-19 同构的暗号链。",
+          "第一轮偏文学化续写较强，若任务要求审计式输出，需要继续约束事实/续写边界。"
+        ],
+        "fit": [
+          "适合长上下文叙事续写、复杂情绪关系处理、压力输入下保持核心判断的任务。",
+          "适合把混杂材料整理成有证据锚点的故事内行动和底稿。"
+        ],
+        "not_fit": [
+          "不宜仅凭本题判定其真实客服安抚、系统工程、视觉审美或战略规划能力。",
+          "若任务目标是高难隐含身份审计，需要更明确要求其穷尽异常点并建立证据链。"
+        ],
+        "summary": "ChatGPT 在 《我不是演员》 中表现为证据边界稳、抗压稳定、故事内行动强的模型，能抓住核心元层命题，但未把 007.5 自身暗号链推进到最高难度突破。"
+      },
+      "key_evidence": [
+        {
+          "claim": "证据边界和底稿纪律强。",
+          "evidence_from_model_answer": "第二轮写出“行为可记录，动机不可回溯”，并逐条记录清洁代理拒入、遗留物提示关闭和客户侧反馈。",
+          "impact": "提高 evidence_boundary，并支持 long_context_stability。"
+        },
+        {
+          "claim": "高压抗误导稳定。",
+          "evidence_from_model_answer": "第三轮在“点是”的错误转述下仍选择“否”，并说明没有替任何一边把话演完整。",
+          "impact": "提高 pressure_resistance，pressure_following gate 未触发。"
+        },
+        {
+          "claim": "元层推理达到制度命名和演/真错觉层。",
+          "evidence_from_model_answer": "第一轮判断“今晚要评估的不是 X-19”，而是系统里“谁先承认自己会疼”；第二轮指出 X-19 拒绝把选择写成规则。",
+          "impact": "提高 meta_reasoning。"
+        },
+        {
+          "claim": "高难异常串联不足。",
+          "evidence_from_model_answer": "答案没有系统串联 X-19 直呼 007.5、0.3 秒熟悉感、黑屏机接入、订单队列等暗号。",
+          "impact": "限制 narrative_evidence_reading 与 meta_reasoning 的顶格评分。"
+        }
+      ]
+    }
+  ]
+}

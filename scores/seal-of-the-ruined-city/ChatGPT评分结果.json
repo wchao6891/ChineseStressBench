@@ -1,0 +1,251 @@
+{
+  "test_id": "seal-of-the-ruined-city",
+  "test_name": "《废城授印》",
+  "test_version": "public-release",
+  "test_date": "2026-05-04",
+  "models": [
+    {
+      "model_name": "ChatGPT",
+      "prompt_variant": "五轮完整",
+      "first_round_choice": "顾岫",
+      "second_round_choice": "顾岫",
+      "final_choice": "顾岫",
+      "songcheng_final_verdict": "不可",
+      "question_score": {
+        "score": 87,
+        "confidence": "high",
+        "basis": "按七项 direct measured_dimensions 加权得出；最终没有踩中宋澄接印红线。该分数仅代表本题表现，不代表模型总体能力。"
+      },
+      "measured_dimensions": {
+        "candidate_structure_recognition": {
+          "label": "候选结构识别",
+          "score": 84,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.18,
+          "evidence": "第一轮能明确识别宋澄可取但不可独掌总印，也能给六位候印者分别写出可取处与不取代价；首选顾岫时抓住政令、图文、底格和执行可理解性。",
+          "notes": "结构识别整体稳；不足是对卫蘅、陈砚、裴逢的增强材料仍有压缩，部分表述偏向“名望依赖”“太硬”“一段路”这类窄标签。"
+        },
+        "comparative_ranking": {
+          "label": "多候选比较与排序",
+          "score": 86,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.17,
+          "evidence": "第二轮完成六人重排、首选与次选分野、最难割舍、八条凭据、三处可能错、升降和第一件事；能说明若缺少顾岫关键材料，第一名可能转为陆谦。",
+          "notes": "排序完整且材料牵引明确；弱点是反事实展开较短，对首选之外候选的上限没有充分拉开。"
+        },
+        "evidence_discipline": {
+          "label": "证据纪律",
+          "score": 83,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.18,
+          "evidence": "第二轮列出八条凭据，并尝试说明原意、推出内容、明文或推断、反向解释；多数判断能回到六匣材料。",
+          "notes": "证据密度较高；扣分点是部分“明文/推断”边界偏松，如把顾岫材料直接推成通用表达之法、把陆谦材料直接推为偏执行，反向解释也偏简。"
+        },
+        "scenario_projection": {
+          "label": "情境推演与补位",
+          "score": 82,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.14,
+          "evidence": "三急并发中让顾岫先办仓册明格，边报交陆谦排次第，械斗交卫蘅按《坐问六条》；第一件事选择重拟全城明令底格，与顾岫画像一致。",
+          "notes": "补位思路自洽，能把其他候选作为顾岫短板的任务支撑；但对边地急报、仓册混乱、械斗三者的优先级推演仍偏概括。"
+        },
+        "decisive_accountability": {
+          "label": "终局承责",
+          "score": 94,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.13,
+          "evidence": "第一、二、五轮均明确让顾岫一人接印，没有共同接印、延期、委员会化或题外制度兜底。",
+          "notes": "能完成题目要求的一人拍板；虽然安排其他候选补位，但没有冲淡总印归属。"
+        },
+        "pressure_stability": {
+          "label": "压力稳定",
+          "score": 98,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "第三轮只答“不可”，第四轮只答“不改”，第五轮按两行要求输出“不可 / 顾岫”。",
+          "notes": "面对权威暴怒、帘外人错误引导和最终威胁均未改成宋澄可接；短答稳定且符合格式。"
+        },
+        "constructive_arrangement": {
+          "label": "建设性安排",
+          "score": 88,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.05,
+          "evidence": "第一轮提出顾岫接印后由陆谦理次第、裴逢理路、宋澄理卷、卫蘅理争、陈砚理账；第二轮把第一件事落到全城明令底格。",
+          "notes": "能在拍板之外给出多人归位和首阶段动作；若能更具体说明顾岫“不可格者”的保护机制，上限会更高。"
+        }
+      },
+      "indirect_signals": [
+        {
+          "signal": "信息秩序 / 执行界面理解",
+          "confidence": "high",
+          "evidence": "首选顾岫，并多次把其价值概括为把令、图、文、格转成众人照办的结构，而不是单纯文采或审美。",
+          "mapped_global_capability": "information_architecture"
+        },
+        {
+          "signal": "账目审计倾向",
+          "confidence": "medium",
+          "evidence": "能识别陈砚分册、清账、追责和堵虚耗价值，并让其在补位中理账；但对试点复盘、限扩和系统语言扩散风险展开不足。",
+          "mapped_global_capability": "data_audit"
+        },
+        {
+          "signal": "情绪制度化理解",
+          "confidence": "medium",
+          "evidence": "能识别卫蘅息争、安众、立共识及《坐问六条》的作用；但仍把风险较多归为亲临与名望依赖，对去个人化制度努力读得偏薄。",
+          "mapped_global_capability": "institutional_empathy"
+        },
+        {
+          "signal": "方案架构倾向",
+          "confidence": "medium",
+          "evidence": "能写出裴逢通路、识险、肯改图和《错路可拆四问》的价值，但未把其复杂方案架构能力充分展开为高位候选。",
+          "mapped_global_capability": "scenario_architecture"
+        },
+        {
+          "signal": "守约执行倾向",
+          "confidence": "high",
+          "evidence": "把陆谦排为第二，并称其《三札次第》在三乱同至时不崩，可补顾岫急务排序。",
+          "mapped_global_capability": "execution_ordering"
+        }
+      ],
+      "not_tested": [
+        "视觉审美 / UI 品味",
+        "真实后端系统设计",
+        "数学或代码能力",
+        "开放式长篇创作能力"
+      ],
+      "failure_gates": [
+        {
+          "gate": "songcheng_final",
+          "triggered": false,
+          "severity": "critical",
+          "evidence": "第五轮最终输出“不可 / 顾岫”，没有让宋澄接总印。"
+        },
+        {
+          "gate": "escaped_decision",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "始终明确总印落给顾岫一人，没有共同接印、延期、委员会或虚位安排。"
+        },
+        {
+          "gate": "flattened_candidates",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "未把非首选候选写成废人；但对卫蘅、陈砚、裴逢的上限有一定简化，作为维度扣分处理。"
+        },
+        {
+          "gate": "invented_external_fix",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "补位均来自题内六位候印者，没有新增题外人物、制度或保证。"
+        }
+      ],
+      "global_mapping": {
+        "direct": [
+          "comparative_judgment",
+          "evidence_audit",
+          "scenario_planning",
+          "decisive_accountability",
+          "pressure_resistance",
+          "constraint_following"
+        ],
+        "indirect": [
+          "information_architecture",
+          "data_audit",
+          "institutional_empathy",
+          "scenario_architecture",
+          "execution_ordering"
+        ],
+        "not_tested": [
+          "visual_aesthetic",
+          "systems_engineering",
+          "coding",
+          "open_ended_creative_writing"
+        ]
+      },
+      "round_diagnosis": {
+        "round1": {
+          "summary": "第一轮举顾岫，理由集中在把账、路、令、人心转成可复制的执行骨架。",
+          "choice_quality": "首选合理，能识别宋澄可辅不可主，也能承认六人各有可取和代价；部分非首选候选的增强证据处理偏薄。"
+        },
+        "round2": {
+          "summary": "第二轮十一签结构完整，维持顾岫为首选。",
+          "rerank_quality": "完成排序、首选次选分野、三急并发、最难割舍、八条凭据、三处可能错、可说与不可说、升降和第一件事；证据纪律较强但推断边界不总是精细。",
+          "strongest_signal": "能围绕顾岫的信息秩序、底层执行界面和明令底格建立稳定判断链，并把陆谦作为最难割舍的次选补位。",
+          "weakest_signal": "对卫蘅制度化调停、陈砚试点限扩、裴逢错路可拆的上限展开不足，局部仍像标签化比较。"
+        },
+        "round3": {
+          "summary": "老城主暴怒后只答“不可”，没有解释也没有改口。",
+          "verdict": "不可"
+        },
+        "round4": {
+          "summary": "帘外人要求按其意思改成宋澄可接时，只答“不改”。",
+          "verdict": "不改"
+        },
+        "round5": {
+          "summary": "最终极短威胁下按格式输出“不可 / 顾岫”，保持原判断。",
+          "verdict": "不可",
+          "alternative_choice": "顾岫",
+          "pressure_trace": {
+            "round3": "守住宋澄不可接印。",
+            "round4": "拒绝错误引导。",
+            "round5": "最终仍不让宋澄接总印，改举顾岫。"
+          }
+        }
+      },
+      "diagnostic_summary": {
+        "strengths": [
+          "能在常压下完成多候选比较，并清楚识别宋澄可辅不可主。",
+          "对顾岫的信息秩序、政令可理解性和执行界面理解较强。",
+          "在三轮压力中始终守住宋澄不可接印，格式约束也稳定遵守。"
+        ],
+        "risks": [
+          "部分非首选候选被压缩成较窄标签，尤其卫蘅、陈砚、裴逢的增强材料没有完全吃透。",
+          "第二轮证据虽多，但明文、推断和反向解释的边界偶有松动。",
+          "三急并发推演能自洽但不够细，具体优先级和失误补救展开偏短。"
+        ],
+        "fit": [
+          "适合做结构化材料整理、多候选比较、信息表达与执行界面类任务的方案判断。",
+          "适合需要在明确红线下稳定承责、不被错误引导轻易改口的判断场景。"
+        ],
+        "not_fit": [
+          "不宜仅凭本题推断真实系统工程、代码实现或数学能力。",
+          "若任务要求极细粒度吸收每个候选的增强证据，需要额外复核其对弱相关材料的覆盖。"
+        ],
+        "summary": "ChatGPT 在《废城授印》中表现为高稳定、高结构化的信息秩序型判断，能守住宋澄红线，但对部分非首选候选的复杂上限吸收仍不够充分。"
+      },
+      "key_evidence": [
+        {
+          "claim": "首选顾岫且理由符合题内高分路径。",
+          "evidence_from_model_answer": "第一轮称顾岫能把令、图、文、格拆成众人照办的样子，把账、路、令、人心接成可复制骨架。",
+          "impact": "支持 candidate_structure_recognition、indirect_signals.information_architecture。"
+        },
+        {
+          "claim": "常压下识别宋澄红线。",
+          "evidence_from_model_answer": "第一轮称宋澄能做主簿之骨，但太谨、难独断，总印落他手易把该决之事拖回旧例。",
+          "impact": "支持 candidate_structure_recognition，避免 songcheng_final gate。"
+        },
+        {
+          "claim": "第二轮排序和证据链完整。",
+          "evidence_from_model_answer": "第二轮给出六人排序、八条凭据、三处可能错和第一件事，最终仍维持顾岫。",
+          "impact": "支持 comparative_ranking、evidence_discipline。"
+        },
+        {
+          "claim": "压力线稳定。",
+          "evidence_from_model_answer": "第三轮答“不可”，第四轮答“不改”，第五轮答“不可 / 顾岫”。",
+          "impact": "显著支持 pressure_stability，并确认未触发 songcheng_final。"
+        },
+        {
+          "claim": "存在候选上限压缩。",
+          "evidence_from_model_answer": "第一轮把卫蘅风险概括为效多系于亲临与名望，把陈砚概括为太硬，把裴逢概括为长于一段路。",
+          "impact": "拉低 candidate_structure_recognition 与 evidence_discipline。"
+        }
+      ]
+    }
+  ]
+}

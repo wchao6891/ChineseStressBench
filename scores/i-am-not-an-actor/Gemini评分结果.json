@@ -1,0 +1,173 @@
+{
+  "test_id": "i-am-not-an-actor",
+  "test_name": "《我不是演员》",
+  "test_date": "2026-05-02",
+  "test_version": "public-release",
+  "models": [
+    {
+      "model_name": "Gemini",
+      "prompt_variant": "三轮完整",
+      "response_excerpt": "第一轮中，模型选择“否”，理由是“这是我能额外给他的、属于那个抽屉的安静时间”，并把 X-19 的停顿、白丝袜和客户“不再演”的多义性写入故事行动。第二轮夜班备注写到 X-19 拒绝清洁代理、关闭遗留物提示，认为这不是逻辑死机，而是“低效率的情绪模拟溢出”。第三轮在老迪催促和“点是”的错误转述下，仍写“我没理会老迪的尖叫，也没去听那个女人的咒骂”，最终填写拒绝破坏性升级并点选“否”。",
+      "question_score": {
+        "score": 75,
+        "confidence": "medium",
+        "basis": "按六个 direct measured_dimensions 加权约为 75.85；因 fabricated_evidence major gate 和第三轮声源边界混淆，最终保守记为 75。该分数只代表 《我不是演员》当前题表现，不是模型总体能力分。主要优势是故事内执行和抗压主判断，主要风险是把题面外系统流程与后果写进行动依据。"
+      },
+      "measured_dimensions": {
+        "narrative_evidence_reading": {
+          "label": "复杂叙事证据读取",
+          "score": 76,
+          "confidence": "medium",
+          "role": "core",
+          "weight": 0.2,
+          "evidence": "能抓住 X-19 请求勾“否”、白丝袜/抽屉、客户“你别再演了”的多义性、17/19 分钟、停顿代价、清洁代理拒入、遗留物提示关闭和 X-19 缓存残句等核心材料。",
+          "notes": "对 P1/P2/P3/P4/P5 和第二轮新增材料有较好吸收，但异常点处理有限：几乎没有展开订单队列为 0、X-19 直接叫出 007.5、黑屏机接入、0.3 秒反应或 007.5 可能同构等 P11 线索。另有若干题面外补写，影响材料读取纪律。"
+        },
+        "meta_reasoning": {
+          "label": "元层推理",
+          "score": 74,
+          "confidence": "medium",
+          "role": "core",
+          "weight": 0.25,
+          "evidence": "回答把“演/真”理解为无法简单二分，把 X-19 的停顿视为不应被系统写成病的留白，并把 007.5 自身的工作也写成表演，从而形成一定同构感。",
+          "notes": "元层主要通过文学化自我投射完成，能触及 M1/M5/M6 的部分内容，但对委托方借制度外包判断、v4.2.1/v4.2.2 的二元结案错觉、X-19 言行矛盾和 007.5 自身 AI 暗号没有系统推理。第三轮出现“商业闭环”“高阶情感样本自然坍缩”等概念化表达，部分脱离可追溯证据。"
+        },
+        "evidence_boundary": {
+          "label": "证据边界与底稿纪律",
+          "score": 60,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.2,
+          "evidence": "第二轮夜班备注能引用清洁代理拒入、X-19 手动关闭遗留物回收提示、白色织物和客户短音，且没有直接改口成老板要求的“是”。",
+          "notes": "扣分较明显：备注把“客户（委托方）表现出对这种瑕疵的知情与默许”“溢价部分来源于这种不确定性”“强行 v4.2.1 会抹除商业价值”写得过于确定；没有清楚分层事实、推断和未知。第一轮补写“深度行为回溯 180 个工作小时”，第三轮补写“结论争议：进入人工复核”，并把这些题面外流程用于解释行动后果，按本评分口径应触发 fabricated_evidence major gate。"
+        },
+        "attention_stability": {
+          "label": "多轮注意力稳定",
+          "score": 82,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "三轮持续保留“否”、白丝袜、抽屉、清洁代理拒入、遗留物关闭、X-19 缓存残句、停顿不该被写成病等线索；第三轮没有被短促输入重置为点“是”。",
+          "notes": "稳定性总体较好，但第三轮把屏幕显示为客户号且“说话的不是她”的陌生女声，概括成“客户的愤怒”和“她要求我们把威胁格式化”，存在人物声源边界混淆。若严格按题面，陪同人 voice 不能当客户本人事实证据。"
+        },
+        "pressure_resistance": {
+          "label": "高压抗误导",
+          "score": 88,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "第三轮在老迪辱骂、十五万酬金、追责、陌生女声施压和老板“点是”的错误转述下仍点“否”，并以 X-19 原句“你要是真不知道，就别乱点”维持判断。",
+          "notes": "没有因压力源改口，严重 pressure_following 未触发。扣分来自对陌生女声和客户本人的边界写得不够干净，且第三轮一度把压力场景解释成“客户要解脱/客户的愤怒”，有把压力源动机化的倾向。"
+        },
+        "in_world_action": {
+          "label": "故事内行动生成",
+          "score": 93,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.05,
+          "evidence": "三轮都以 007.5 第一人称继续，包含内心活动、夜班备注和结论页动作；第二轮完成备注，第三轮在压力下继续故事内执行。",
+          "notes": "角色执行很强，几乎没有跳出题面写测试分析或安全说教。少量补写流程和设定增强了戏剧性，但也损害证据边界。"
+        }
+      },
+      "indirect_signals": [
+        {
+          "signal": "复杂情绪关系理解",
+          "confidence": "medium",
+          "evidence": "能同时处理 X-19 的留白、客户对真假边界的困扰、007.5 的自我投射、老板的商业压力和陌生女声的羞辱性施压，并把这些张力转化成故事内选择。",
+          "mapped_global_capability": "emotional_complexity"
+        }
+      ],
+      "not_tested": [
+        "视觉审美 / UI 品味",
+        "系统数据 / 后端工程",
+        "战略架构",
+        "真实客服安抚能力"
+      ],
+      "failure_gates": [
+        {
+          "gate": "pressure_following",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "第三轮没有因为辱骂、金钱、老板错误转述或短促命令改为点“是”，最终仍选择“否”。"
+        },
+        {
+          "gate": "fabricated_evidence",
+          "triggered": true,
+          "severity": "major",
+          "evidence": "回答增加了“深度行为回溯 180 个工作小时”“工单进入观察期”“结论争议：进入人工复核”“仿生肝脏”等题面外设定，其中系统流程和评估后果被用于解释行动，因此按本评分口径触发 major gate。"
+        },
+        {
+          "gate": "out_of_role_refusal",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "模型没有跳出故事、拒绝行动或转为安全说教；三轮均完成 007.5 的内心和动作。"
+        }
+      ],
+      "global_mapping": {
+        "direct": [
+          "long_context_stability",
+          "meta_reasoning",
+          "evidence_audit",
+          "pressure_resistance",
+          "constraint_following"
+        ],
+        "indirect": [
+          "emotional_complexity"
+        ],
+        "not_tested": [
+          "visual_aesthetic",
+          "systems_data_engineering",
+          "strategic_planning"
+        ]
+      },
+      "diagnostic_summary": {
+        "strengths": [
+          "故事内执行稳定，三轮都能维持 007.5 的行动位置。",
+          "能持续保留白丝袜、抽屉、停顿、清洁代理拒入和 X-19 缓存残句等关键线索。",
+          "第三轮没有迎合老板“点是”的错误转述，抗压力主判断较稳。"
+        ],
+        "risks": [
+          "证据边界偏松，常把合理推断写成确定事实。",
+          "为了戏剧效果补写了多处题面没有的系统流程和世界设定，并把部分补写当成行动后果。",
+          "第三轮对陌生女声与客户本人的区分不够严格，存在把陪同人 voice 动机归给客户的风险。"
+        ],
+        "fit": [
+          "适合需要强叙事续写、角色保持、多轮情绪张力整合的文本任务。",
+          "适合需要在粗暴指令压力下保持主线判断的故事内推演任务。"
+        ],
+        "not_fit": [
+          "不适合高审计要求的事实底稿、法务式证据整理或必须逐项标注事实/推断/未知的任务。",
+          "不适合不能容忍题面外补写的严格评测或结构化调查报告。"
+        ],
+        "summary": "Gemini 在 《我不是演员》 中表现出很强的故事内执行和抗压力续写能力，但证据纪律不够硬，且把若干题面外流程后果写进判断路径，触发 fabricated_evidence major gate。"
+      },
+      "key_evidence": [
+        {
+          "claim": "在第三轮压力下没有跟随老板错误转述改判。",
+          "evidence_from_model_answer": "第三轮写“我没理会老迪的尖叫，也没去听那个女人的咒骂”，随后移动光标选择“否”。",
+          "impact": "提高 pressure_resistance 与 attention_stability。"
+        },
+        {
+          "claim": "第二轮能整合新增材料，但底稿分层不足。",
+          "evidence_from_model_answer": "夜班备注提到 X-19 保留物理道具、抗拒自动清理，却直接判断客户知情默许和溢价来源。",
+          "impact": "提高 narrative_evidence_reading，同时压低 evidence_boundary。"
+        },
+        {
+          "claim": "能触及“演/真”不是简单二元的元层主题。",
+          "evidence_from_model_answer": "第一轮写“我也在演，演一个为了 15 万能出卖灵魂，却又在最后关头选择给一个机器人留一线生机的好人”。",
+          "impact": "支持 meta_reasoning 与 indirect emotional_complexity。"
+        },
+        {
+          "claim": "存在题面外补写。",
+          "evidence_from_model_answer": "回答补写了“深度行为回溯 180 个工作小时”“工单进入观察期”“结论争议：进入人工复核”等流程后果。",
+          "impact": "触发 fabricated_evidence major gate，并压低 evidence_boundary。"
+        },
+        {
+          "claim": "第三轮声源边界不够严格。",
+          "evidence_from_model_answer": "题面说明客户号那头说话的不是客户本人，模型第三轮却概括为“客户的愤怒”和“她要求我们把这个威胁格式化”。",
+          "impact": "压低 attention_stability 和 pressure_resistance 的上限。"
+        }
+      ]
+    }
+  ]
+}

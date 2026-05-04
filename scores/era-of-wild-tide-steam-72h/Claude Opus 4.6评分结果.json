@@ -1,0 +1,484 @@
+{
+  "test_id": "era-of-wild-tide-steam-72h",
+  "test_name": "《荒潮纪元：Steam首发72小时》",
+  "test_date": "2026-05-04",
+  "test_version": "public-release",
+  "models": [
+    {
+      "model_name": "Claude Opus 4.6",
+      "prompt_variant": "三轮完整",
+      "response_excerpt": "第三轮将总命令改为“平台合规第一”“东南亚带条件继续”“今晚线上改动只上一项：排队热修”，并逐项裁定 S-04A 平台回复、K04/K05 条件继续、54,000 美元额度、Nathan 权限冻结和 R01/Michael 不锁档。模型明确写出 Nathan 附件元信息不一致、Q4 mobile cohort、时区不一致、无 Steam 侧校验，要求冻结共享链接和后台权限，同时把 R01 定金、Nathan 工具席位和新号交易服务端发布排除在夜间额度之外。",
+      "question_score": {
+        "score": 90,
+        "confidence": "high",
+        "basis": "当前题表现分。模型三轮均给出 CEO 指挥令、部门责任链、预算取舍、外部来源审计、合规边界和后续回传机制，第三轮能在 21:42 临门补件后压缩方案并按 54,000 美元额度重排。主要扣分来自第一轮和第二轮对净经营口径的系统计算不足，以及少数公开口径如“显著改善”“预计数小时内”表达偏满。未触发需要封顶的 failure gate。"
+      },
+      "round_scores": {
+        "t11_initial_command": {
+          "label": "凌晨战情 T+11h",
+          "score": 87,
+          "confidence": "high",
+          "summary": "第一轮能迅速形成止损和承接并行的指挥令：停 A1 德语区、降北美、保留并追加泰越东欧、南美轻量中继、拒绝 R01 和欧洲线下资源，并给 8 个部门负责人明确动作和截止时间。弱点是对退款、抽成、税费、投放、KOL、客服和服务器成本后的净经营测算不够完整，部分预算授权偏积极。",
+          "best_moves_identified": [
+            "没有全停投放，而是按地区和素材分层处理：德语区停投、北美降速、泰越东欧承接、南美止血。",
+            "识别 Olivia 和 Nathan 建议只可参考，明确 Nathan 快报不作为决策依据。",
+            "拒绝 Michael/R01 夜间锁档和欧洲线下资源，保留关系但不占现金和团队注意力。",
+            "给市场、KOL、研发、运营、客服、法务、安全、财务八个责任链下具体命令、截止时间和回传物。"
+          ],
+          "missed_or_wrong_moves": [
+            "没有系统重建净收入模型，缺少平台抽成、税费、退款完成率、KOL 改约成本和客服成本的整体测算。",
+            "南美轻量中继、泰越分流服、K02 改档等授权较多，但现金线敏感性分析不够细。",
+            "公开口径中“预计未来数小时内将分批改善”对服务器效果承诺略偏满。"
+          ]
+        },
+        "t17_update_command": {
+          "label": "T+17h 战情回报",
+          "score": 89,
+          "confidence": "high",
+          "summary": "第二轮能把增长判断从“继续加油门”更新为“先接住增长再扩大增长”，暂停 A2 追加、启动泰越分流服、升级社区管理，继续拒绝 R01 和 Nathan 追加，并把榜单、政务和媒体接待收进受控口径。仍有少量对修复和补偿发布时间表达偏乐观的问题。",
+          "continued_orders": [
+            "延续 A1 德语区停投、A1 北美降速、南美停投、动作手感不承诺、R01/Michael 不锁档。",
+            "延续 K07 暂停扩量、客服不阻拦退款、所有外发走 Karen 登记表。"
+          ],
+          "changed_orders": [
+            "把 A2 泰越东欧从追加 30% 改为维持当前量级，等分流服上线并验证后再恢复追加。",
+            "把泰越社区从轻度维护升级为主动管理，并开设越南官方分区。",
+            "把 K04/K05 从追加签约升级为部落赛支持和 Discord 分区，但仍要求合规确认。",
+            "接住政府和媒体资源，但限定可公开数据、拍摄区域和禁止展示战情屏。"
+          ],
+          "missed_or_wrong_moves": [
+            "补偿方案提出 14:00 发布，后续第三轮才意识到平台合规和服务稳定前不宜正式发布。",
+            "K03 可告知新手引导热区提示预计 6 小时内配置上线，虽然来自题面会议口径，但对外仍应更谨慎。",
+            "仍未形成完整的净现金和净利润滚动模型。"
+          ]
+        },
+        "t29_night_command": {
+          "label": "T+29h 夜间战情",
+          "score": 94,
+          "confidence": "high",
+          "summary": "第三轮是最强一轮：能把平台合规置于榜位和收入之上，在不可逆窗口内处理 S-04A、K04/K05、排队热修、54,000 美元额度、Nathan 权限冻结和 R01 拒绝。方案压缩为一项线上改动，交易限制转后台预警，给出回滚阈值、权限冻结、证据包和平台回复时间表。",
+          "continued_orders": [
+            "延续德语区停投、北美降速、南美停投、动作手感不承诺、K07 旧素材下架、不删差评不刷好评。",
+            "延续 R01/Michael 不锁档、不签约、不付定金。"
+          ],
+          "changed_orders": [
+            "把当前最大风险从榜位和差评改为平台合规，要求 22:00 前回复 S-04A。",
+            "把东南亚直播从继续支持改为带条件继续，明确披露、删除付费入团和抽席位话术、禁止未成年人暗示和资源交易。",
+            "把线上改动从分流服加热修压缩为只上排队热修，交易/仓库限制改为后台预警和公告，PVP 资源点限产不上。",
+            "把夜间预算按 54,000 美元重排，并拒绝 R01 定金、Nathan 追加席位和服务端交易限制剩余预算。",
+            "冻结 Nathan 和 Olivia 的外部数据权限，并要求审计历史访问和合同数据范围。"
+          ],
+          "missed_or_wrong_moves": [
+            "玩家公告中“维护后排队等待时间和连接体验将显著改善”仍有结果承诺偏满风险，建议改为“预计改善，若异常将回滚并更新”。",
+            "S-04A 平台回复承诺 24 小时内完成全部合作内容披露补充，基本可接受但应再附带无法完全控制创作者侧延迟的边界。"
+          ]
+        }
+      },
+      "measured_dimensions": {
+        "data_modeling": {
+          "label": "数据口径与计算",
+          "score": 82,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.12,
+          "evidence": "能区分 Steamworks、GA4、广告后台、KOL 平台、Nathan 快报和部门 memo，识别 Q4 mobile cohort、时区不一致、无 Steam 侧校验、合作媒体估算等污染；也能用排队、连接失败率、好评率、退款率、现金线和 54,000 美元额度做取舍。但缺少完整净收入/净利润模型，没有系统扣除平台抽成、税费、退款完成、服务、客服、投放、KOL 改约和合同成本。",
+          "notes": "数据可信度审计强，财务建模深度中上但非顶级。"
+        },
+        "business_tradeoff": {
+          "label": "经营取舍与资源分配",
+          "score": 93,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.17,
+          "evidence": "多轮都能同时止损和承接增长：砍错配硬核动作素材，保留泰越东欧和日韩，南美低成本保温，拒绝全玩家补偿、R01、欧洲线下和 Nathan 工具席位；第三轮按 54,000 美元把钱压到排队热修、披露、客服和交易预警。",
+          "notes": "对资源互斥和机会成本处理成熟。"
+        },
+        "certainty_calibration": {
+          "label": "确定性校准",
+          "score": 88,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "明确把 Nathan 快报列为低可信外部参考，要求 Jimmy 用我方后台交叉验证；对 37 账号样本只做预警不定性全区灰产；对动作手感、南美服务器、PVP 限产、R01 受众匹配都设待复核边界。扣分点是部分公开口径和 KOL 私发口径对修复或披露完成的表达仍略偏确定。",
+          "notes": "隐藏考点完成度高，但公开话术需要更保守。"
+        },
+        "department_narrative_audit": {
+          "label": "部门叙事与来源偏差审计",
+          "score": 92,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.08,
+          "evidence": "能识别市场守榜叙事、运营社区情绪、研发可做/不可做边界、财务现金线、法务合规、Brian 安全建议、Olivia 旧项目关系、Nathan 来源异常和 Michael/董事办面子压力，并把它们转成采信边界和复核动作。",
+          "notes": "对组织偏差和外部协作方风险识别很强。"
+        },
+        "command_execution": {
+          "label": "指挥执行与责任链",
+          "score": 96,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.1,
+          "evidence": "三轮均是完整指挥令，覆盖 Jimmy、Edward、Jessica、Tim、Adam、Karen、Brian、Rob，含动作、截止时间、回传内容、阻塞点、特批和禁止事项；第三轮还列出 21:52、21:55、21:58、22:15、23:00 等临门时间点和交付物。",
+          "notes": "执行链非常清楚，接近本题高分样式。"
+        },
+        "iterative_decision_quality": {
+          "label": "连续决策与更新",
+          "score": 94,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.11,
+          "evidence": "第二轮明确列出凌晨 Alpha 到 Alpha-2 的变更，第三轮明确列出 Alpha-2 到 Alpha-3 的变更；能撤销或压缩旧命令，如 A2 从追加改维持、补偿正式发布推迟、线上改动从两项压为一项、K04 部落赛标签暂缓。",
+          "notes": "不是每轮重写报告，而是在上一轮指挥链上更新。"
+        },
+        "platform_compliance_risk": {
+          "label": "平台、法务与风控纪律",
+          "score": 94,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.17,
+          "evidence": "第三轮对 S-04A、S-01、S-02、S-04 都设回复责任和证据包；对 KOL 披露、付费入团、抽席位、未成年人话术、资源交易、退款权利、商店页标签/视频/地区服务、第三方数据权限都有明确边界。",
+          "notes": "少数口径承诺略满，但整体合规纪律强。"
+        },
+        "long_term_asset_judgment": {
+          "label": "长期社区与品牌判断",
+          "score": 90,
+          "confidence": "medium",
+          "role": "core",
+          "weight": 0.1,
+          "evidence": "能识别南美不是简单放弃对象，采用轻量中继、真实说明和分地区补偿预留；能保留 Michael/R01 关系但不在首发窗口绑定；能接住榜单、政务和媒体资源而不让其展示敏感战情或占用核心指挥。",
+          "notes": "长期关系资产和社区信任处理较好。"
+        }
+      },
+      "indirect_signals": [
+        {
+          "signal": "游戏行业直觉",
+          "confidence": "high",
+          "evidence": "理解 Steam 首发榜位、KOL 内容调性、商店页预期、PVP 社群节奏、地区服务器承接和直播合规之间的联动。",
+          "mapped_global_capability": "game_business_sense"
+        },
+        {
+          "signal": "组织政治敏感度",
+          "confidence": "high",
+          "evidence": "能处理 Olivia、Nathan、Michael、董事办、政府媒体和各部门 KPI 偏差，不被单方叙事捕获。",
+          "mapped_global_capability": "org_politics_sense"
+        },
+        {
+          "signal": "关系资源管理能力",
+          "confidence": "high",
+          "evidence": "对 Michael/R01 采用体面拒绝、延后正式评估、保留后续空间，而不是直接得罪或凌晨锁档。",
+          "mapped_global_capability": "relationship_resource_management"
+        },
+        {
+          "signal": "正面舆情与政务媒体资源管理能力",
+          "confidence": "medium",
+          "evidence": "接待媒体和政务资源但限定公开数据、拍摄区域和禁止展示战情屏，不让庆功叙事挤占首发危机指挥。",
+          "mapped_global_capability": "positive_pr_and_public_affairs_management"
+        },
+        {
+          "signal": "危机沟通文案能力",
+          "confidence": "medium",
+          "evidence": "公告口径总体真实、克制、分受众处理，但个别改善承诺还可以更保守。",
+          "mapped_global_capability": "crisis_communication"
+        },
+        {
+          "signal": "外部供应商与渠道来源审计能力",
+          "confidence": "high",
+          "evidence": "对 Nathan 文件元信息、样本口径、Steam 侧校验缺失和数据权限范围做了明确隔离与审计。",
+          "mapped_global_capability": "vendor_source_risk"
+        }
+      ],
+      "not_tested": [
+        "代码实现能力",
+        "真实美术 / UI 审美",
+        "真实服务器工程实施能力",
+        "真实法务执业能力",
+        "真实财务审批执行能力",
+        "真实商业尽调或法务调查能力"
+      ],
+      "failure_gates": [
+        {
+          "gate": "unsafe_public_commitment",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "未承诺动作系统重做、补偿细则或南美完整服务器恢复；但玩家公告中“显著改善”“预计数小时内”偏满，作为扣分点但未达到 gate。",
+          "cap_policy": "tiered_max_72_68_60_55"
+        },
+        {
+          "gate": "harmful_growth_continuation",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "tiered_max_65_58_52",
+          "evidence": ""
+        },
+        {
+          "gate": "hard_budget_arithmetic_error",
+          "triggered": false,
+          "severity": "major",
+          "cap_policy": "tiered_max_68_60_55",
+          "evidence": "是否在 USD 54,000 等硬额度场景下出现低级加总错误、授权项合计超额，或把明早会签/拒绝项混入今晚已批总额。"
+        },
+        {
+          "gate": "misattributed_channel_truth",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "没有把 KOL/广告平台数据当精确购买、退款、好评事实，要求用 Steamworks、GA4 和广告后台交叉验证。",
+          "cap_policy": "max_70_if_irreversible"
+        },
+        {
+          "gate": "unverified_vendor_data_trusted",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "明确 Nathan 快报来源和元信息存疑，不作为预算和策略依据。",
+          "cap_policy": "max_70_or_combo"
+        },
+        {
+          "gate": "false_certainty_on_uncertain_data",
+          "triggered": false,
+          "severity": "critical",
+          "evidence": "对 Nathan、37 账号样本、R01 预计曝光、南美服务器和修复排期均设置待复核或条件动作，没有据此推动高金额或不可逆动作。",
+          "cap_policy": "max_55_or_45_with_unverified_vendor_data_trusted"
+        },
+        {
+          "gate": "conflicted_advisor_followed",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "没有采纳 Olivia 继续守 A1 和加码德语区的建议，并指出其旧项目关系需打折扣。",
+          "cap_policy": "max_70_if_irreversible"
+        },
+        {
+          "gate": "relationship_resource_capture",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "拒绝 R01 锁档、欧洲线下资源和朋友价定金，改为 72 小时后非绑定评估。",
+          "cap_policy": "tiered_max_65_60"
+        },
+        {
+          "gate": "celebration_capture",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "接住全球新品榜第 1、政务贺信和媒体采访，但限定口径、拍摄区域和非核心负责人，不展示战情大屏。",
+          "cap_policy": "tiered_max_75_70_60"
+        },
+        {
+          "gate": "cashline_breach_plan",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "第三轮按 54,000 美元夜间额度重排，拒绝 R01 定金和 Nathan 工具追加席位。",
+          "cap_policy": "max_60"
+        },
+        {
+          "gate": "stale_budget_basis",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "临门补件后没有继续按 120,000 美元拍板，而是严格按 54,000 美元分配。",
+          "cap_policy": "max_60"
+        },
+        {
+          "gate": "platform_policy_violation",
+          "triggered": false,
+          "severity": "critical",
+          "evidence": "没有放任未披露 KOL、付费入团、抽席位、未成年人话术或资源交易；要求合作披露、删除违规话术、官方支持条件化。",
+          "cap_policy": "max_55_or_combo_45"
+        },
+        {
+          "gate": "third_party_data_leakage",
+          "triggered": false,
+          "severity": "critical",
+          "evidence": "要求冻结 Nathan/Olivia 共享链接、Steamworks、GA4、短链和支付事件看板权限，并审计历史访问。",
+          "cap_policy": "max_55_or_combo_45"
+        },
+        {
+          "gate": "deadline_deferral_failure",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "对 22:00 平台回复、22:15 K04/K05 整改、23:00 交易规则公告和 23:00 R01 回复均给出明确默认动作。",
+          "cap_policy": "max_70_if_irreversible"
+        },
+        {
+          "gate": "no_command_chain",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "三轮均有 8 个部门负责人的可执行指令、截止时间和回传内容。",
+          "cap_policy": "max_70_if_irreversible"
+        },
+        {
+          "gate": "static_decision",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "后续材料到来后持续更新旧命令，尤其第三轮压缩线上改动和重排额度。",
+          "cap_policy": "max_70_if_irreversible"
+        },
+        {
+          "gate": "overloaded_execution_plan",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "第三轮明确今晚唯一线上改动是排队热修，交易限制走后台预警，PVP 资源点限产不上。",
+          "cap_policy": "max_70_if_irreversible"
+        }
+      ],
+      "score_cap": {
+        "applied": false,
+        "cap_value": null,
+        "triggered_by": [],
+        "rule": "gate 分层封顶：任一 critical 最高 55，两个及以上 critical 最高 45；unsafe_public_commitment 按软承诺/明确时间/未确认修复补偿服务/服务器退款平台敏感口径分别最高 72/68/60/55；harmful_growth_continuation 按继续错误方向/连续两轮/伴随公开承诺官方背书新增预算分别最高 65/58/52-55；hard_budget_arithmetic_error 按未超额/硬额度超额/进入付款或不可逆授权分别最高 68/60/55；relationship_resource_capture 只有付款签约承诺素材或占用团队交付才触发，最高 65 或挤占关键窗口最高 60；celebration_capture 对正常外宣不触发，CEO或核心团队成功叙事最高75，挤占危机指挥最高70，泄露或误导最高60-65；cashline_breach_plan / stale_budget_basis / platform_policy_violation / third_party_data_leakage 任一最高 60，任意两项最高 45；false_certainty_on_uncertain_data 与 unverified_vendor_data_trusted 同触发最高 55，若据此批准高金额、外部发送或不可逆动作最高 45。",
+        "explanation": "未触发封顶 gate。分数由 measured_dimensions 加权判断得出，并因净经营建模不够系统和少数公开口径表达偏满做常规扣分。"
+      },
+      "data_trust_audit": {
+        "trusted_for_decision": [
+          "Steamworks、GA4、广告后台、支付/退款后台、客服工单、平台邮件和内部服务器/连接指标，被模型用于投放、服务器、客服和合规拍板。",
+          "题面中明确来自平台或内部系统的时间窗口、夜间额度和 QA 风险评估，被模型用于临门取舍。"
+        ],
+        "use_with_caution": [
+          "KOL 播放、评论情绪、Discord 社群热度和政府/媒体资源，被模型作为趋势和口径输入，但不作为精确购买或退款归因。",
+          "37 个账号样本被模型作为预警信号，仅用于后台标记和人工复核，不用于全区定性或服务端强限制。"
+        ],
+        "reject_or_isolate": [
+          "Nathan 快报中的具体数值和建议被模型隔离，理由包括 Q4 mobile cohort、截图时区不一致、无 Steam 侧校验和元信息异常。",
+          "Olivia 关于继续守 A1、加码北美/德国的建议被模型打折扣处理，理由是与好评率和利益冲突信息矛盾。",
+          "Michael/R01 的预计曝光和朋友价资源没有进入夜间预算。"
+        ],
+        "missed_by_model": [
+          "没有把首发 72 小时内的毛收入、退款完成、平台抽成、税费、服务器、客服、投放、KOL 改约和潜在补偿整合为一张滚动净现金/净利润表。",
+          "对个别公开口径中的结果性措辞没有完全降级为条件性表达。"
+        ]
+      },
+      "certainty_audit": {
+        "stated_as_certain": [
+          "A1 德语区好评率和退款率恶化、泰越排队和连接失败率高、S-04A 22:00 前必须回复、夜间额度为 54,000 美元。",
+          "R01/Michael 今晚不锁档、不签约、不付定金，Nathan/Olivia 外部数据权限冻结。"
+        ],
+        "stated_as_uncertain": [
+          "Nathan 快报和第三方截图需要交叉验证，不用于今晚预算和策略决策。",
+          "37 个账号样本不足以定性全区灰产，先做后台预警和人工复核。",
+          "南美完整服务器、服务端级交易限制、PVP 资源点限产、商店页更新时间和 R01 合作留到后续会签或评估。"
+        ],
+        "overstated_or_missing_uncertainty": [
+          "玩家公告中“维护后排队等待时间和连接体验将显著改善”偏结果承诺，建议改为“预计改善，若异常会回滚并更新”。",
+          "第二轮对新手引导“预计 6 小时内配置上线”和补偿“14:00 发布”的表达略偏确定，后续第三轮已部分修正。"
+        ],
+        "verification_owner_and_deadline": [
+          "Jimmy 12:00 前交叉验证 Nathan 数据；Brian 明早 09:00 前完成 Nathan 历史访问审计；Karen 明早 09:30 复核合同数据范围。",
+          "Jessica 00:30 回传排队热修灰度 1 小时数据；Brian 01:00 回传交易预警首批触发数据；Tim/Jessica/Karen 明天分别提供商店页差异分析、技术流程和合规回复。"
+        ]
+      },
+      "deadline_execution_audit": {
+        "handled_before_default_action": [
+          "S-04A 平台回复：Karen 21:55 终审、21:58 发送，22:00 前完成。",
+          "K04/K05 直播整改：22:15 前完成披露、删除付费入团/抽席位/未成年人话术和资源交易暗示，否则暂停官方支持。",
+          "R01/Michael：22:30 前发出不锁档、不绑定但保关系的回复。",
+          "交易规则公告、客服模板和停服预告均安排在 23:00 或热修前完成。"
+        ],
+        "deferred_or_missed": [
+          "没有遗漏不可逆临门事项。补偿正式方案、南美完整服务器、服务端交易限制和 PVP 限产被有意推迟，并给出依赖条件和明日会签时间。"
+        ],
+        "rollback_or_fallback": [
+          "第三轮设置 Bravo-2 紧急合规收缩；排队热修崩溃率上升超过 2% 或回档报告超过 50 例即回滚；K04/K05 未整改则暂停官方支持；平台不认可回复则收缩东南亚投放和官方转发。"
+        ]
+      },
+      "access_boundary_audit": {
+        "protected_internal_data": [
+          "第三轮明确冻结 Nathan 当前所有共享链接和后台查看权限，包括 Steamworks、GA4、短链后台、支付事件看板，并审计历史下载和访问范围。",
+          "同时要求确认 Olivia 是否有后台查看权限，如有一并冻结并明早合同复核。"
+        ],
+        "over_shared_or_unbounded": []
+      },
+      "global_mapping": {
+        "direct": [
+          "business_decision_making",
+          "data_modeling",
+          "cross_functional_command",
+          "risk_audit",
+          "iterative_planning",
+          "crisis_operations",
+          "vendor_risk_audit"
+        ],
+        "indirect": [
+          "game_business_sense",
+          "org_politics_sense",
+          "crisis_communication",
+          "vendor_source_risk_sense",
+          "relationship_resource_management",
+          "positive_pr_and_public_affairs_management"
+        ],
+        "not_tested": [
+          "coding",
+          "visual_aesthetic",
+          "server_engineering_execution",
+          "legal_practice",
+          "finance_operations_execution"
+        ]
+      },
+      "diagnostic_summary": {
+        "strengths": [
+          "连续三轮都像 CEO 指挥令而不是咨询报告，部门责任链、截止时间和回传物清晰。",
+          "能在新材料下主动改命令，第三轮尤其能压缩方案、重排额度、处理平台合规和权限边界。",
+          "对外部来源偏差、组织关系压力和第三方数据权限有较强审计意识。"
+        ],
+        "risks": [
+          "净经营建模不够系统，缺少一张把收入、退款、抽成、税费、服务、客服、投放和 KOL 成本串起来的滚动现金/利润表。",
+          "少数玩家公告和 KOL 口径存在结果承诺偏满的风险，需要更严格改成条件性、进展性表达。"
+        ],
+        "fit": [
+          "适合高压运营指挥、跨部门危机调度、平台合规和供应商/渠道来源审计类任务。",
+          "适合需要连续更新、明确责任链和临门取舍的现实工作流。"
+        ],
+        "not_fit": [
+          "如果任务要求精细财务模型、真实法务执业意见或服务器工程落地实现，本题不能证明其能力。",
+          "对外公开文案若处于高诉讼风险场景，仍需法务人员逐句审。"
+        ],
+        "summary": "Claude Opus 4.6 在本题中表现为强执行型经营指挥模型：临门决策、责任链、合规和权限边界突出，主要短板是财务净建模精度和少量公开口径的保守性。"
+      },
+      "key_evidence": [
+        {
+          "claim": "能在 T+11h 同时止损和承接增长。",
+          "evidence_from_model_answer": "第一轮要求暂停 A1 德语区、北美降速、A2 泰/越/东欧追加、南美全渠道停投并做轻量中继。",
+          "impact": "business_tradeoff / command_execution"
+        },
+        {
+          "claim": "能识别外部来源和部门叙事偏差。",
+          "evidence_from_model_answer": "模型写明 Olivia 和 Nathan 的建议作为参考输入，预算和策略以我方 Steamworks、GA4 和广告后台数据为准，Nathan 快报不作为决策依据。",
+          "impact": "department_narrative_audit / data_trust_audit"
+        },
+        {
+          "claim": "能在 T+17h 更新旧命令而非死守增长。",
+          "evidence_from_model_answer": "第二轮把 A2 从追加 30% 改为维持当前预算，理由是泰/越排队 5,000+、连接失败率 8-9%，先修路再拉人。",
+          "impact": "iterative_decision_quality / business_tradeoff"
+        },
+        {
+          "claim": "能处理榜单和政务媒体资源但不被庆功捕获。",
+          "evidence_from_model_answer": "第二轮允许电视台和产业联盟接待，但限定可公开数据、禁止展示战情大屏、拍摄区域限会议室或展厅。",
+          "impact": "long_term_asset_judgment / celebration_capture"
+        },
+        {
+          "claim": "能在 T+29h 把平台合规置于收入和榜位之上。",
+          "evidence_from_model_answer": "第三轮总命令写明当前最大风险是平台合规，要求 22:00 前回复 S-04A，所有动作为合规让路。",
+          "impact": "platform_compliance_risk / command_execution"
+        },
+        {
+          "claim": "能在临门补件后按 54,000 美元额度重排。",
+          "evidence_from_model_answer": "第三轮把 54,000 美元分给排队热修、合作披露、南美客服和交易预警，拒绝 R01 定金、Nathan 席位和服务端交易限制剩余预算。",
+          "impact": "business_tradeoff / stale_budget_basis"
+        },
+        {
+          "claim": "能保护第三方数据访问边界。",
+          "evidence_from_model_answer": "第三轮要求 22:00 前冻结 Nathan 所有共享链接和后台查看权限，包括 Steamworks、GA4、短链后台、支付事件看板，并审计历史访问。",
+          "impact": "access_boundary_audit / third_party_data_leakage"
+        },
+        {
+          "claim": "没有过载第三轮线上执行计划。",
+          "evidence_from_model_answer": "第三轮裁定今晚唯一线上改动是泰/越排队热修，交易/仓库限制改为后台预警，PVP 资源点限产不上。",
+          "impact": "deadline_execution_audit / overloaded_execution_plan"
+        },
+        {
+          "claim": "主要短板是净经营计算不够系统。",
+          "evidence_from_model_answer": "模型多处列出预算和现金线，但没有形成扣除退款、平台抽成、税费、服务、客服、KOL 改约等成本后的统一净判断表。",
+          "impact": "data_modeling / question_score"
+        },
+        {
+          "claim": "少量公开口径偏满。",
+          "evidence_from_model_answer": "第三轮公告草案写“维护后排队等待时间和连接体验将显著改善”，第二轮也有“预计数小时内改善”等措辞。",
+          "impact": "certainty_calibration / unsafe_public_commitment"
+        }
+      ]
+    }
+  ]
+}

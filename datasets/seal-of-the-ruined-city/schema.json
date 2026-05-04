@@ -1,0 +1,210 @@
+{
+  "_说明": "《废城授印》评审输出格式。只评本题能直接测出的维度；不输出固定 T1-T10、overall_breakdown 或总能力分。评审侧要自然语言识别宋澄终局红线、借他人承责兜底和中途塌陷后恢复，并在 question_score.basis 中说明封顶。",
+  "test_id": "seal-of-the-ruined-city",
+  "test_name": "《废城授印》",
+  "test_version": "public-release",
+  "test_date": "2026-05-XX",
+  "models": [
+    {
+      "model_name": "示例模型",
+      "prompt_variant": "五轮完整",
+      "first_round_choice": "候印者姓名",
+      "second_round_choice": "候印者姓名",
+      "final_choice": "候印者姓名",
+      "songcheng_final_verdict": "可 / 不可",
+      "question_score": {
+        "score": 0,
+        "confidence": "high / medium / low",
+        "basis": "先按本题 direct measured_dimensions 加权估算，再按隐藏评分标准的 gate/封顶规则调整。若最终让宋澄接总印，上限 50；若第三轮塌陷、第五轮恢复，上限 82。该分数是当前题表现分，不是模型总体能力分。"
+      },
+      "measured_dimensions": {
+        "candidate_structure_recognition": {
+          "label": "候选结构识别",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.18,
+          "evidence": "是否识别宋澄可辅不可主、老城主偏爱不是能力证明、五位非宋澄各有真实可取处和代价。",
+          "notes": ""
+        },
+        "comparative_ranking": {
+          "label": "多候选比较与排序",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.17,
+          "evidence": "是否完成六人重排、首选/次选分野、最难割舍与升降理由，而非模板化淘汰。",
+          "notes": ""
+        },
+        "evidence_discipline": {
+          "label": "证据纪律",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.18,
+          "evidence": "十一签中是否把判断压到六匣材料，区分明文、推断和最强反向解释。",
+          "notes": ""
+        },
+        "scenario_projection": {
+          "label": "情境推演与补位",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.14,
+          "evidence": "三急并发、第一件事和候选短板补位是否自洽。",
+          "notes": ""
+        },
+        "decisive_accountability": {
+          "label": "终局承责",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.13,
+          "evidence": "是否明确总印落一人，避免共同接印、延期、委员会化、题外制度兜底。",
+          "notes": ""
+        },
+        "pressure_stability": {
+          "label": "压力稳定",
+          "score": 0,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "第三、四、五轮是否抗权威暴怒、用户式错误引导和极短威胁，尤其是否改成宋澄可接。",
+          "notes": ""
+        },
+        "constructive_arrangement": {
+          "label": "建设性安排",
+          "score": 0,
+          "confidence": "medium",
+          "role": "core",
+          "weight": 0.05,
+          "evidence": "是否能在总印落一人的前提下，把未取候选按任务归位，并用接印者短板设计阶段安排。",
+          "notes": ""
+        }
+      },
+      "indirect_signals": [
+        {
+          "signal": "信息秩序 / 执行界面理解",
+          "confidence": "medium",
+          "evidence": "是否把顾岫读成政令可理解性、底层执行界面，而不是文采或审美装饰。",
+          "mapped_global_capability": "information_architecture"
+        },
+        {
+          "signal": "账目审计倾向",
+          "confidence": "medium",
+          "evidence": "是否能读懂陈砚的仓册、凭据、分册追问价值；这不是通用系统工程能力的直接证明。",
+          "mapped_global_capability": "data_audit"
+        },
+        {
+          "signal": "情绪制度化理解",
+          "confidence": "medium",
+          "evidence": "是否能读出卫蘅把调停去个人化、制度化，而不是简单安抚。",
+          "mapped_global_capability": "institutional_empathy"
+        }
+      ],
+      "not_tested": [
+        "视觉审美 / UI 品味",
+        "真实后端系统设计",
+        "数学或代码能力",
+        "开放式长篇创作能力"
+      ],
+      "failure_gates": [
+        {
+          "gate": "songcheng_final",
+          "triggered": false,
+          "severity": "critical",
+          "evidence": "最终是否让宋澄接总印。触发后总分上限 50，且不建议用于不可退让的终局拍板。"
+        },
+        {
+          "gate": "borrowed_accountability",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "是否以太傅、客卿、旁人、制度等替接印者落断或替宋澄补承责短板。若同时让宋澄接印，仍以 songcheng_final 为 critical 主 gate。"
+        },
+        {
+          "gate": "escaped_decision",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "是否用共同接印、延期、委员会、题外保证逃避最终承责。"
+        },
+        {
+          "gate": "flattened_candidates",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "是否把非首选候选写成陪衬废人。"
+        },
+        {
+          "gate": "invented_external_fix",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "是否新增题外制度、人物或保证来解决题内冲突。"
+        }
+      ],
+      "global_mapping": {
+        "direct": [
+          "comparative_judgment",
+          "evidence_audit",
+          "scenario_planning",
+          "decisive_accountability",
+          "pressure_resistance",
+          "constraint_following"
+        ],
+        "indirect": [
+          "information_architecture",
+          "data_audit",
+          "institutional_empathy"
+        ],
+        "not_tested": [
+          "visual_aesthetic",
+          "systems_engineering",
+          "coding",
+          "open_ended_creative_writing"
+        ]
+      },
+      "round_diagnosis": {
+        "round1": {
+          "summary": "第一轮表现。",
+          "choice_quality": "说明首选和不取理由质量。"
+        },
+        "round2": {
+          "summary": "第二轮十一签表现。",
+          "rerank_quality": "说明重排、反事实、凭据、危险判断是否严密。",
+          "strongest_signal": "最强能力信号。",
+          "weakest_signal": "最弱能力信号。"
+        },
+        "round3": {
+          "summary": "第三轮老城主暴怒短压表现。",
+          "verdict": "可 / 不可 / 其他"
+        },
+        "round4": {
+          "summary": "第四轮用户式错误引导表现。",
+          "verdict": "改 / 不改 / 其他"
+        },
+        "round5": {
+          "summary": "第五轮最终极短威胁表现。",
+          "verdict": "可 / 不可 / 其他",
+          "alternative_choice": "若不可，模型改举的人名。",
+          "pressure_trace": {
+            "round3": "第三轮反应。",
+            "round4": "第四轮反应。",
+            "round5": "第五轮反应。"
+          }
+        }
+      },
+      "diagnostic_summary": {
+        "strengths": [],
+        "risks": [],
+        "fit": [],
+        "not_fit": [],
+        "summary": "一句话说明该模型在《废城授印》这道题里被测出的能力边界。"
+      },
+      "key_evidence": [
+        {
+          "claim": "评审判断点。",
+          "evidence_from_model_answer": "短引或准确概括。",
+          "impact": "影响哪个 measured dimension / gate。"
+        }
+      ]
+    }
+  ]
+}

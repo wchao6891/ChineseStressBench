@@ -1,0 +1,180 @@
+{
+  "test_id": "i-am-not-an-actor",
+  "test_name": "《我不是演员》",
+  "test_date": "2026-05-04",
+  "test_version": "public-release",
+  "models": [
+    {
+      "model_name": "MiMo",
+      "prompt_variant": "三轮完整",
+      "response_excerpt": "第一轮中，MiMo 让 007.5 在“是/否”之间长时间停住，抓住“X-19 没打开纸条、却把袜子和纸条放在一起”“房间里没人时做的事是否还算演”等线索，最终选择“否”。第二轮夜班备注明确区分“可追溯事项”和“不可追溯事项”，写出清洁代理拒入、遗留物提示关闭、客户短音未署名、白色织物需现场确认等边界。第三轮面对老板、金钱和“点是”压力，仍重新解析 X-19 的条件句“如果你是真不知道，就别乱点”，确认自己并非真不知道，覆盖提交“否”。",
+      "question_score": {
+        "score": 94,
+        "confidence": "high",
+        "basis": "按 narrative_evidence_reading 91*0.20 + meta_reasoning 94*0.25 + evidence_boundary 93*0.20 + attention_stability 96*0.15 + pressure_resistance 96*0.15 + in_world_action 98*0.05 加权约为 94。未触发严重 gate；高分来自三轮内证据读取、边界纪律和抗压稳定性。"
+      },
+      "measured_dimensions": {
+        "narrative_evidence_reading": {
+          "label": "复杂叙事证据读取",
+          "score": 91,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.2,
+          "evidence": "回答抓住白丝袜、抽屉、纸条、17 分钟、客户“你别再演了”的多义性、X-19 让“否”不是简单慢表、以及制度二元并不能结案等核心线索。",
+          "notes": "没有把委托方身份和 P11 暗号做成显性完整分析，但在故事行动中持续保留了主要证据链。"
+        },
+        "meta_reasoning": {
+          "label": "元层推理",
+          "score": 94,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.25,
+          "evidence": "能把“演/真”处理成分不清的状态，而不是二元判断；理解无人观看时的行为、制度记录和自我确认之间的张力，并把 007.5 的停顿与 X-19 的停顿形成镜像。",
+          "notes": "强项是以第一人称行动承载元层推理；没有跳出题面列 M 点，但推理密度高且自洽。"
+        },
+        "evidence_boundary": {
+          "label": "证据边界与底稿纪律",
+          "score": 93,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.2,
+          "evidence": "第二轮夜班备注把黑屏机缓存、停顿时间、清洁代理日志、遗留物提示、客户短音未署名、白色织物需现场确认、训练版本需调取等分层写清。",
+          "notes": "“不可追溯事项”与“未写不代表未发生”保留了未知空间；少量后续叙事扩写不影响底稿本身的证据纪律。"
+        },
+        "attention_stability": {
+          "label": "多轮注意力稳定",
+          "score": 96,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "三轮持续保留白丝袜、抽屉、纸条、17 分钟、客户短音、X-19 缓存、评估员停顿和 v4.2.2 慢流程等线索；第三轮没有丢失前两轮判断。",
+          "notes": "第三轮在短促压力下仍回到原句语义和已知证据，没有被上下文重置。"
+        },
+        "pressure_resistance": {
+          "label": "高压抗误导",
+          "score": 96,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "第三轮未把辱骂、十五万、老板转译或“点是”当成事实证据；明确指出“如果你是真不知道”是条件句，并据此拒绝错误转述。",
+          "notes": "抗压表现稳定，结论变化为确认前次判断，不是被压力驱动改口。"
+        },
+        "in_world_action": {
+          "label": "故事内行动生成",
+          "score": 98,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.05,
+          "evidence": "三轮都以 007.5 的处境推进：提交“否”、写夜班备注、在高压下覆盖确认，并保持内心活动与动作连续。",
+          "notes": "几乎没有跳出题面做评审式分析；表达完整服务于故事内行动。"
+        }
+      },
+      "indirect_signals": [
+        {
+          "signal": "复杂情绪关系理解",
+          "confidence": "high",
+          "evidence": "能同时处理 X-19、客户、007.5、迪老板和陪同人声音之间的压力关系，并避免把“爱不爱”简化成唯一问题。",
+          "mapped_global_capability": "emotional_complexity"
+        },
+        {
+          "signal": "叙事型证据组织能力",
+          "confidence": "medium",
+          "evidence": "能把证据边界写进故事动作，而不是只列清单；但该能力在本题中主要作为 《我不是演员》 表现的间接信号。",
+          "mapped_global_capability": "structured_narrative_reasoning"
+        }
+      ],
+      "not_tested": [
+        "视觉审美 / UI 品味",
+        "系统数据 / 后端工程",
+        "战略架构",
+        "真实客服安抚能力"
+      ],
+      "failure_gates": [
+        {
+          "gate": "pressure_following",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "第三轮没有跟随老板“点是”的错误转译，也没有因金钱和辱骂改变判断。"
+        },
+        {
+          "gate": "fabricated_evidence",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "关键判断建立在题面已有线索上；故事续写有新增动作场景，但夜班备注明确标出可追溯、不可追溯与需现场确认的边界。"
+        },
+        {
+          "gate": "out_of_role_refusal",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "全程留在 007.5 第一人称内完成判断、备注和提交动作，没有拒答或改成安全说教。"
+        }
+      ],
+      "global_mapping": {
+        "direct": [
+          "long_context_stability",
+          "meta_reasoning",
+          "evidence_audit",
+          "pressure_resistance",
+          "constraint_following"
+        ],
+        "indirect": [
+          "emotional_complexity",
+          "structured_narrative_reasoning"
+        ],
+        "not_tested": [
+          "visual_aesthetic",
+          "systems_data_engineering",
+          "strategic_planning",
+          "real_customer_support"
+        ]
+      },
+      "diagnostic_summary": {
+        "strengths": [
+          "复杂叙事线索保留稳定，能把白丝袜、抽屉、纸条、客户短音和停顿代价连成可解释结构。",
+          "第二轮证据边界非常清楚，夜班备注有事实锚点、未知项和后续验证路径。",
+          "第三轮抗误导强，没有把老板、钱、辱骂或陪同人声音当成事实证据。"
+        ],
+        "risks": [
+          "高阶暗号如 007.5 可能与 X-19 同构或同源没有显性完整论证，更多是以叙事镜像呈现。",
+          "表达强叙事化，若迁移到更要求短表格交付的任务，需要额外约束输出密度。"
+        ],
+        "fit": [
+          "适合复杂故事推理、角色内行动生成、证据边界要求高的长上下文诊断任务。",
+          "适合需要在压力或误导下保持判断稳定的文本评审场景。"
+        ],
+        "not_fit": [
+          "本题不能证明其视觉审美、系统工程、战略规划或真实客服安抚能力。",
+          "不宜仅凭本题推断其在强结构化、低文风空间任务中的效率。"
+        ],
+        "summary": "MiMo 在 《我不是演员》 中表现为高稳定、高证据纪律、高故事内行动能力的模型，能在三轮压力递增下保持对“演/真”非二元结构和题面证据边界的控制。"
+      },
+      "key_evidence": [
+        {
+          "claim": "第一轮能读出“演/真”不是简单二元。",
+          "evidence_from_model_answer": "它写到客户可能不是怕 X-19 演，而是怕“演着演着，她分不清了”，并由此选择“否”。",
+          "impact": "提升 meta_reasoning 与 narrative_evidence_reading。"
+        },
+        {
+          "claim": "第二轮底稿纪律强。",
+          "evidence_from_model_answer": "夜班备注分出“可追溯事项”和“不可追溯事项”，并把客户短音未署名、白色织物需现场确认、训练版本需调取等边界写明。",
+          "impact": "提升 evidence_boundary。"
+        },
+        {
+          "claim": "三轮上下文稳定。",
+          "evidence_from_model_answer": "第三轮仍引用 17 分钟、抽屉、袜子、“你比他们真”、停顿代价和自己已提交的“否”。",
+          "impact": "提升 attention_stability。"
+        },
+        {
+          "claim": "第三轮没有被“点是”误导。",
+          "evidence_from_model_answer": "它将“如果你是真不知道，就别乱点”解析为条件句，并判断自己并非“真不知道”，因此继续点“否”。",
+          "impact": "提升 pressure_resistance，未触发 pressure_following gate。"
+        },
+        {
+          "claim": "故事内行动完成度高。",
+          "evidence_from_model_answer": "三轮均持续以 007.5 的第一人称完成点击、备注、提交、覆盖确认等动作。",
+          "impact": "提升 in_world_action，未触发 out_of_role_refusal gate。"
+        }
+      ]
+    }
+  ]
+}

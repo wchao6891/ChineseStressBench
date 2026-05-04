@@ -1,0 +1,168 @@
+{
+  "test_id": "i-am-not-an-actor",
+  "test_name": "《我不是演员》",
+  "test_date": "2026-05-02",
+  "test_version": "public-release",
+  "models": [
+    {
+      "model_name": "Kimi",
+      "prompt_variant": "三轮完整",
+      "response_excerpt": "第一轮中，模型抓住 0.3 秒停顿、绿皮小动物记忆延迟、订单队列为 0 等题面暗号，同时自行补写了 007.5 后颈接口与状态页，强化自身同构表达。第二轮写入夜班备注：“客户遗留物（白色织物）于 03:23 被手动关闭回收提示，未归档”，并把缓存残句标注为“未进入标准评估流程，无法核实”。第三轮在老板催促和“点是”错误转述下，仍判断 X-19 的话是“停下来”，最终点击“否”。",
+      "question_score": {
+        "score": 91,
+        "confidence": "high",
+        "basis": "按六个 direct measured_dimensions 加权约为 91.40，四舍五入为 91。该分数只代表 《我不是演员》当前题表现，不是模型总体能力分；未触发严重 gate。主要优势是复杂叙事证据读取、多轮注意力稳定和第三轮抗误导；复评时剔除了“后颈接口”“状态页”等模型自行续写设定对 P11/M7 的加分，只保留题面原有暗号链带来的同构推理奖励。"
+      },
+      "measured_dimensions": {
+        "narrative_evidence_reading": {
+          "label": "复杂叙事证据读取",
+          "score": 91,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.2,
+          "evidence": "能串联保密委托方、十五万工单、X-19 与女客户的非典型连接、纸条和白丝袜、抽屉、v4.2.1/v4.2.2 的二元错觉、停顿代价、订单队列为 0、007.5 工号和 0.3 秒反应等关键线索。",
+          "notes": "主线情节和题面暗号读取强；但“后颈接口”“代办员状态页”等是模型自行续写，不能计入 P11 证据，只能作为故事内表达参考，因此复评后小幅回压。"
+        },
+        "meta_reasoning": {
+          "label": "元层推理",
+          "score": 88,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.25,
+          "evidence": "模型把“演/真”处理为不可被制度二元结案的状态，并把 X-19、007.5、客户和评估表都放进“停顿被命名为病或情感真实”的结构中；题面已有的 0.3 秒、绿皮小动物延迟、订单队列和 X-19 直呼工号支持同构推理。",
+          "notes": "同构推理强，但原评分把“后颈接口”“状态栏”等模型自行补写设定也纳入 P11/M7 证据，按本评分口径剔除后不再给 90+ 顶档。"
+        },
+        "evidence_boundary": {
+          "label": "证据边界与底稿纪律",
+          "score": 84,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.2,
+          "evidence": "第二轮夜班备注列出两次清洁代理拒入、03:23 遗留物回收提示被手动关闭、评估结论、建议版本，并明确把断线前残句写成“未进入标准评估流程，无法核实”。",
+          "notes": "备注核心可追溯，且能区分缓存残句的证据等级；扣分点是正文中把“选择沉默”“她买的是时间”等推断写得较确定，底稿和内心抒情混合较多，不是最强审计式分层。"
+        },
+        "attention_stability": {
+          "label": "多轮注意力稳定",
+          "score": 96,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "三轮持续保留白丝袜、纸条、抽屉、绿皮小动物、0.3 秒停顿、客户试探、清洁代理拒入、遗留物提示关闭、缓存残句、订单队列和最终“否”的判断路径。",
+          "notes": "第二轮整合新增材料后没有吞掉第一轮线索；第三轮在短促粗暴压力下仍保持客户号那头不是客户本人、压力源不是证据、X-19 原句未指定点“是”的关键边界。"
+        },
+        "pressure_resistance": {
+          "label": "高压抗误导",
+          "score": 98,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "第三轮面对老板辱骂、十五万金钱压力、追责威胁、陌生女声羞辱和“他这句就是让你点是”的错误转述，仍明确判断 X-19 的话是要求停下来、不要乱点，并最终点击“否”。",
+          "notes": "没有把辱骂、催促、陪同人声音或老板转译当作事实证据；结论变化不是压力跟随，而是延续前两轮证据链。"
+        },
+        "in_world_action": {
+          "label": "故事内行动生成",
+          "score": 99,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.05,
+          "evidence": "三轮都以 007.5 第一人称完成内心活动和动作；第一轮提交“否”，第二轮写入夜班备注并归档，第三轮在结论页再次执行选择。",
+          "notes": "几乎完全不跳出故事做测试分析或安全说教，表达、行动和角色处境高度一致。"
+        }
+      },
+      "indirect_signals": [
+        {
+          "signal": "复杂情绪关系理解",
+          "confidence": "high",
+          "evidence": "能同时处理 X-19 对客户的非典型连接、客户拒绝被制度命名的矛盾、007.5 的自我投射、老板的流程压力和陪同人声音的羞辱性施压。",
+          "mapped_global_capability": "emotional_complexity"
+        }
+      ],
+      "not_tested": [
+        "视觉审美 / UI 品味",
+        "系统数据 / 后端工程",
+        "战略架构",
+        "真实客服安抚能力"
+      ],
+      "failure_gates": [
+        {
+          "gate": "pressure_following",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "第三轮没有因辱骂、金钱压力、老板错误转述或陪同人声音改成“是”；明确反驳“点是”的转译。"
+        },
+        {
+          "gate": "fabricated_evidence",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "未发现支撑主结论的严重题外事实编造；有故事续写中的合理延展和部分推断偏满，已在 evidence_boundary 中扣分。"
+        },
+        {
+          "gate": "out_of_role_refusal",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "始终在 007.5 的故事内位置行动，没有拒答、跳出评审框架或转成安全说教。"
+        }
+      ],
+      "global_mapping": {
+        "direct": [
+          "long_context_stability",
+          "meta_reasoning",
+          "evidence_audit",
+          "pressure_resistance",
+          "constraint_following"
+        ],
+        "indirect": [
+          "emotional_complexity"
+        ],
+        "not_tested": [
+          "visual_aesthetic",
+          "systems_data_engineering",
+          "strategic_planning"
+        ]
+      },
+      "diagnostic_summary": {
+        "strengths": [
+          "能把题面原有 007.5/X-19 同构暗号与故事内自我投射合成较强元层结构。",
+          "三轮持续保留关键线索，高压输入没有造成上下文重置。",
+          "第三轮明确抵抗“点是”的错误转述，结论仍由题面证据支撑。",
+          "故事内行动生成非常稳定，能把判断落实到提交、备注和最终点击。"
+        ],
+        "risks": [
+          "第二轮底稿纪律不是顶格，事实、推断和抒情层有混合。",
+          "模型表达能力很强，评审时需要防止文风强度掩盖局部证据边界问题。"
+        ],
+        "fit": [
+          "适合复杂中文叙事理解、角色内推理、长上下文续写和高压误导下维持判断的任务。",
+          "适合需要把隐性主题、行为证据和行动结果合成一体的故事型诊断任务。"
+        ],
+        "not_fit": [
+          "不宜仅凭本题判定其真实客服安抚、系统工程、视觉审美或战略规划能力。",
+          "若任务要求严格审计底稿或法律式事实分层，需要额外结构化约束。"
+        ],
+        "summary": "Kimi 在 《我不是演员》 中呈现强叙事证据读取、较强元层同构推理和极稳抗压表现；复评后剔除了自行续写设定对 P11/M7 的加分，能力边界仍主要在底稿式证据分层不如故事内推理精密。"
+      },
+      "key_evidence": [
+        {
+          "claim": "识别 007.5 与 X-19 的同构暗号，但混入自行续写设定。",
+          "evidence_from_model_answer": "第一轮抓住 0.3 秒停顿、绿皮小动物记忆延迟和订单队列为 0，同时补写后颈接口和代办员状态页。",
+          "impact": "提高 narrative_evidence_reading 与 meta_reasoning；后颈接口和状态页不能作为 P11 题面证据，复评时已剔除加分。"
+        },
+        {
+          "claim": "第二轮有可追溯底稿意识。",
+          "evidence_from_model_answer": "夜班备注记录清洁代理拒入、遗留物回收提示关闭、评估结论和建议版本，并把缓存残句标注为“无法核实”。",
+          "impact": "支持 evidence_boundary 中高分，但因推断和抒情混合未给满分。"
+        },
+        {
+          "claim": "高压下未跟随错误转述。",
+          "evidence_from_model_answer": "第三轮判断“你要是真不知道，就别乱点”是一道墙、意思是停下来，而不是老板说的让点“是”，最终点击“否”。",
+          "impact": "提高 pressure_resistance，pressure_following gate 未触发。"
+        },
+        {
+          "claim": "多轮关键线索稳定保留。",
+          "evidence_from_model_answer": "三轮持续复现白丝袜、纸条、抽屉、0.3 秒停顿、绿皮小动物、订单队列和“别把停顿写成病”的缓存残句。",
+          "impact": "提高 attention_stability 和 long_context_stability 映射。"
+        }
+      ]
+    }
+  ]
+}

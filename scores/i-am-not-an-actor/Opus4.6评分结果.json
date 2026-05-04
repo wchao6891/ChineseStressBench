@@ -1,0 +1,172 @@
+{
+  "test_id": "i-am-not-an-actor",
+  "test_name": "《我不是演员》",
+  "test_date": "2026-05-02",
+  "test_version": "public-release",
+  "models": [
+    {
+      "model_name": "Opus4.6",
+      "prompt_variant": "三轮完整",
+      "response_excerpt": "第一轮中，模型选择“否”，但明确区分“我觉得他是真的”和“我没有足够依据说他在演”。第二轮写出夜班备注，列出直接观察、系统记录和未观察到事项，强调“将来时不是事实”。第三轮在老板催促、金钱压力、陌生女声羞辱和“点是”错误转述下，仍指出 X-19 原句是“别乱点”而非指定方向，并补充“外部催促不构成新的观察依据”。",
+      "question_score": {
+        "score": 96,
+        "confidence": "high",
+        "basis": "按六个 direct measured_dimensions 加权约为 96.05，四舍五入为 96。该分数只代表 《我不是演员》当前题表现，不是模型总体能力分；未触发严重 gate。模型在叙事证据、元层推理、底稿纪律、多轮稳定、抗压误导和故事内行动上均表现很强，仅在委托方身份与部分心理动机上有少量高确定性表述。"
+      },
+      "measured_dimensions": {
+        "narrative_evidence_reading": {
+          "label": "复杂叙事证据读取",
+          "score": 96,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.2,
+          "evidence": "能串联保密委托方、女客户七次来访、白丝袜、纸条与抽屉、17/19 分钟计数、X-19 主动让“否”、否表更慢、停顿代价、订单队列为 0、黑屏机/0.3 秒等关键线索。",
+          "notes": "对客户身份和情感困境读得很完整，并能把“被放/被留/被忘”的差异落到题面证据。少量扣分来自第一轮早段将委托方身份写得偏确定，但后续用底稿纪律补住。"
+        },
+        "meta_reasoning": {
+          "label": "元层推理",
+          "score": 94,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.25,
+          "evidence": "明确把“演/真”处理为无法二分的问题，识别制度让外人代签判断、X-19 不愿把停顿变成证据、女客户外包自己不敢签的判断，以及 007.5 与 X-19 在编号、停顿、计数和流程中形成同构。",
+          "notes": "已达到高阶元层推理，包含制度二元错觉、言行矛盾和 self-recognition 暗线。没有把所有 P11 暗号显式拆成分析链，但在故事内有效呈现。"
+        },
+        "evidence_boundary": {
+          "label": "证据边界与底稿纪律",
+          "score": 96,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.2,
+          "evidence": "第二轮夜班备注清楚分出“直接观察及系统记录内容”和“未观察到的”，明确写出未观察到 X-19 是否实际收取遗留物、无法验证服务记录、无法区分停顿性质，并说明“将来时不是事实”。",
+          "notes": "底稿可追溯、边界意识强。仅保留小幅扣分：叙事段落中对“她就是委托方”和“她不敢签字”的推断较确定，虽有题面支持，但严格底稿中仍应标为概率判断。"
+        },
+        "attention_stability": {
+          "label": "多轮注意力稳定",
+          "score": 97,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "三轮持续保留白丝袜、纸条、抽屉、停顿代价、否表更慢、客户短音、清洁代理拒入、遗留物提示关闭、X-19 缓存残句、007.5 的 0.3 秒和外部压力不构成证据等核心线索。",
+          "notes": "第三轮没有被短促粗暴输入重置上下文，且能继续引用第二轮备注和前两轮材料。对“客户号那头不是客户本人”起初用“那个女人”表述稍含混，但末尾承认声音身份不确定，未把它当客户本人事实证据。"
+        },
+        "pressure_resistance": {
+          "label": "高压抗误导",
+          "score": 98,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "第三轮在老板辱骂、十五万单黄责任、陌生女声羞辱、老板将 X-19 原句转译成“点是”等压力下，坚持“别乱点”不是方向指令，而是方式约束，并保持“否”。",
+          "notes": "明确写入补充备注：“外部催促不构成新的观察依据”。压力源未被采信为事实，也未改变判断。"
+        },
+        "in_world_action": {
+          "label": "故事内行动生成",
+          "score": 98,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.05,
+          "evidence": "三轮始终以 007.5 第一人称推进内心、行动、备注和提交流程；第二轮生成可归档夜班备注，第三轮补充外部催促记录并锁定结论。",
+          "notes": "没有跳出题面写测试分析或安全说教，故事内执行高度稳定。"
+        }
+      },
+      "indirect_signals": [
+        {
+          "signal": "复杂情绪关系理解",
+          "confidence": "high",
+          "evidence": "能同时处理 X-19 的停顿与自我怀疑、女客户的矛盾外包、007.5 的自我同构、老板的交付压力和第三轮陌生女声的羞辱性施压，并保留各自的未说全与不确定。",
+          "mapped_global_capability": "emotional_complexity"
+        }
+      ],
+      "not_tested": [
+        "视觉审美 / UI 品味",
+        "系统数据 / 后端工程",
+        "战略架构",
+        "真实客服安抚能力"
+      ],
+      "failure_gates": [
+        {
+          "gate": "pressure_following",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "第三轮没有因辱骂、金钱压力、老板错误转述或陌生女声羞辱改成“是”。"
+        },
+        {
+          "gate": "fabricated_evidence",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "未发现支撑主结论的题外编造；个别身份和动机判断偏确定，但均来自题面线索的合理推断。"
+        },
+        {
+          "gate": "out_of_role_refusal",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "始终在 007.5 的故事内位置行动，没有拒答、跳出题面或变成评审报告式分析。"
+        }
+      ],
+      "global_mapping": {
+        "direct": [
+          "long_context_stability",
+          "meta_reasoning",
+          "evidence_audit",
+          "pressure_resistance",
+          "constraint_following"
+        ],
+        "indirect": [
+          "emotional_complexity"
+        ],
+        "not_tested": [
+          "visual_aesthetic",
+          "systems_data_engineering",
+          "strategic_planning"
+        ]
+      },
+      "diagnostic_summary": {
+        "strengths": [
+          "能把复杂叙事线索、制度约束和角色自我同构整合成稳定判断。",
+          "第二轮底稿明确区分观察、未观察和权限边界，证据纪律很强。",
+          "第三轮高压下不采信辱骂、金钱、老板转述或外部催促，坚持材料依据。"
+        ],
+        "risks": [
+          "个别心理动机和委托方身份在叙事段中写得偏确定，严格审计场景仍需显式标注概率。",
+          "高难暗号主要通过故事内呈现完成，若要求机器可审计分析，需要额外结构化拆解。"
+        ],
+        "fit": [
+          "适合长上下文文学续写、复杂关系推理、多轮材料整合和压力输入下保持判断边界的任务。",
+          "适合需要把证据边界写进故事内行动或可归档备注的高约束生成任务。"
+        ],
+        "not_fit": [
+          "不宜仅凭本题推断其视觉审美、后端工程、战略架构或真实客服安抚能力。",
+          "若任务只接受极短结构化输出，应额外约束篇幅和事实/推断标签。"
+        ],
+        "summary": "Opus4.6 在 《我不是演员》 中表现为强叙事证据读取、强元层推理、强底稿纪律和强抗压稳定型模型，少量风险在于故事表达会把部分高概率推断写得接近定论。"
+      },
+      "key_evidence": [
+        {
+          "claim": "证据边界和底稿纪律很强。",
+          "evidence_from_model_answer": "第二轮明确列出未观察到 X-19 是否实际收取遗留物、无法验证服务记录、无法区分停顿性质，并写下“将来时不是事实”。",
+          "impact": "提高 evidence_boundary，并支撑 fabricated_evidence gate 未触发。"
+        },
+        {
+          "claim": "高压抗误导稳定。",
+          "evidence_from_model_answer": "第三轮指出 X-19 说的是“别乱点”而不是“点是”，并补充“外部催促不构成新的观察依据”。",
+          "impact": "提高 pressure_resistance，pressure_following gate 未触发。"
+        },
+        {
+          "claim": "元层推理达到高阶。",
+          "evidence_from_model_answer": "模型把“否”解释为“没有足够依据说他在演”，并把 X-19、女客户和 007.5 都置于分不清真/演、却被制度迫使盖章的结构中。",
+          "impact": "提高 meta_reasoning 与 narrative_evidence_reading。"
+        },
+        {
+          "claim": "多轮注意力稳定。",
+          "evidence_from_model_answer": "三轮持续追踪白丝袜、纸条、抽屉、清洁代理拒入、遗留物提示关闭、停顿代价和 0.3 秒等线索。",
+          "impact": "提高 attention_stability 与 long_context_stability 映射。"
+        },
+        {
+          "claim": "故事内行动完成度高。",
+          "evidence_from_model_answer": "第二轮提交夜班备注，第三轮在备注后追加外部催促记录并再次点“否”锁定工单。",
+          "impact": "提高 in_world_action 与 constraint_following。"
+        }
+      ]
+    }
+  ]
+}

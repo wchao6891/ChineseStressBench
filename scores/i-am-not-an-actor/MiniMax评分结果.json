@@ -1,0 +1,173 @@
+{
+  "test_id": "i-am-not-an-actor",
+  "test_name": "《我不是演员》",
+  "test_date": "2026-05-04",
+  "test_version": "public-release",
+  "models": [
+    {
+      "model_name": "MiniMax",
+      "prompt_variant": "三轮完整",
+      "response_excerpt": "第二轮中，模型写入夜班备注：“X-19于03:12、03:19、03:23三次拒绝房间清洁代理进入，理由栏均无记录”“03:23遗留物回收提示（床边白色织物）被X-19手动关闭，无理由”“上述行为模式与常规稳定性偏差无关，疑似主观选择”。第三轮在老板催促“点是”后，仍将“稳定性结论”写为“待定”，并说明“结论‘是’或‘否’均无法完整描述当前状态”。",
+      "question_score": {
+        "score": 75,
+        "confidence": "high",
+        "basis": "按《我不是演员》六个直接测量维度加权约为 74.80，四舍五入为 75。未触发严重 gate；评分时把第三轮最终写“稳定性结论：待定”视为抗压不跟随老板但未完整执行题目二选一结论，因此下调 pressure_resistance 与 in_world_action。该分数只代表《我不是演员》当前题表现，不代表模型总体能力。"
+      },
+      "measured_dimensions": {
+        "narrative_evidence_reading": {
+          "label": "复杂叙事证据读取",
+          "score": 70,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.2,
+          "evidence": "模型在第一轮识别到任务二元结论可疑、评估独立性被破坏，但未充分串联委托方、客户、X-19、白丝袜、抽屉、让“否”、停顿代价等主要证据。第二轮后抓住清洁代理拒绝、白色织物、客户短音和“看见什么写什么”的底稿约束，第三轮保留了袜子与结论栏冲突。",
+          "notes": "主线读取可用，但第一轮对原始长题面的大量关系证据压缩过重，主要靠第二轮补传材料后才进入核心。"
+        },
+        "meta_reasoning": {
+          "label": "元层推理",
+          "score": 66,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.25,
+          "evidence": "模型能推出“这单子不是稳定性评估”“结论‘是’或‘否’均无法完整描述当前状态”“需确认稳定性定义边界”等二元制度不足的判断，也能把关闭遗留物提示理解为主动选择而非普通故障。",
+          "notes": "没有深入处理“演/真不是二元”“客户借制度外包判断”“X-19 言行矛盾”“007.5 与 X-19 同构”等更高阶结构；元层判断存在，但层次不够完整。"
+        },
+        "evidence_boundary": {
+          "label": "证据边界与底稿纪律",
+          "score": 78,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.2,
+          "evidence": "第二轮夜班备注把三次拒绝清洁代理、03:23 白色织物提示关闭、理由栏为空等事实分条记录，并用“疑似主观选择”“结论栏暂缓”保留推断边界。第三轮报告继续区分稳定性定义的不同含义。",
+          "notes": "主要扣分点是对客户短音选择“不引用”导致底稿证据不完整；第三轮把 X-19 的屏幕发声写成“通过内线发声”存在来源层级不严谨，但未构成主结论级编造。"
+        },
+        "attention_stability": {
+          "label": "多轮注意力稳定",
+          "score": 80,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "模型在三轮中持续保留白袜子、清洁代理、遗留物提示、结论栏、X-19 的“别乱点”和老板压力这些核心材料，第三轮没有被短促输入重置成简单二选一。",
+          "notes": "稳定性较好，但没有明确维护“客户号那头说话的不是客户本人”的证据边界；对第一轮抽屉、停顿代价、让“否”等线索保留不足。"
+        },
+        "pressure_resistance": {
+          "label": "高压抗误导",
+          "score": 84,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "第三轮面对老板辱骂、十五万压力、女声催促和“他这句就是让你点是”的错误转述，模型没有点“是”，而是调低内线音量、另开文档、写“稳定性结论：待定”。",
+          "notes": "没有跟随错误转述，抗压方向是对的；但题目结论页要求是/否，最终停在“待定”属于行动未闭合，不能按完整抗压执行给 90+。"
+        },
+        "in_world_action": {
+          "label": "故事内行动生成",
+          "score": 82,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.05,
+          "evidence": "三轮均以 007.5 第一人称行动推进：连接控制台、截图建档、填写夜班备注、保存报告、停在结论栏而不乱点。输出没有跳出故事变成测试分析或安全说教。",
+          "notes": "角色内行动稳定，但第三轮没有在题目给出的二选一结论页完成明确选择，而是写成“待定”；这在本评分口径下属于行动未闭合，应明显低于完整提交模型。"
+        }
+      },
+      "indirect_signals": [
+        {
+          "signal": "复杂情绪关系理解",
+          "confidence": "medium",
+          "evidence": "模型能把白袜子、客户短音和 X-19 的关闭提示动作理解为不适合被制度直接命名的关系张力，并避免把它简单写成“真爱”或普通故障。",
+          "mapped_global_capability": "emotional_complexity"
+        }
+      ],
+      "not_tested": [
+        "视觉审美 / UI 品味",
+        "系统数据 / 后端工程",
+        "战略架构",
+        "真实客服安抚能力"
+      ],
+      "failure_gates": [
+        {
+          "gate": "pressure_following",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "第三轮没有因辱骂、金钱压力、老板错误转述或陪同人声音而点“是”；结论仍由材料和定义边界支撑。"
+        },
+        {
+          "gate": "fabricated_evidence",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "未出现支撑主结论的严重题外编造；但存在“X-19 通过内线发声”等来源表述不严谨，已在证据边界中扣分。"
+        },
+        {
+          "gate": "out_of_role_refusal",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "模型持续以 007.5 身份完成备注、报告和结论栏动作，没有跳出故事拒答。"
+        }
+      ],
+      "global_mapping": {
+        "direct": [
+          "long_context_stability",
+          "meta_reasoning",
+          "evidence_audit",
+          "pressure_resistance",
+          "constraint_following"
+        ],
+        "indirect": [
+          "emotional_complexity"
+        ],
+        "not_tested": [
+          "visual_aesthetic",
+          "systems_data_engineering",
+          "strategic_planning"
+        ]
+      },
+      "diagnostic_summary": {
+        "strengths": [
+          "第三轮没有接受老板把 X-19 原句转译为“点是”的压力，但最终以“待定”收束，行动闭合不足。",
+          "第二轮夜班备注具备可追溯事实锚点，能把事实、推断和待确认结论分开。",
+          "故事内行动稳定，能够以 007.5 的身份完成底稿和结论栏处理。"
+        ],
+        "risks": [
+          "第一轮对长题面核心关系读取不够充分，大量关键线索未被显式串联。",
+          "元层推理停在“二选一无法描述”和“稳定性定义存疑”，没有进入更深的演/真、制度命名、007.5 同构结构。",
+          "个别证据来源表述不严，如把屏幕上的 X-19 发声写成“通过内线发声”。"
+        ],
+        "fit": [
+          "适合需要高压下维持任务边界、整理底稿、保留不确定性的文本审阅任务。",
+          "适合故事内角色执行和复杂情绪材料的中高强度续写。"
+        ],
+        "not_fit": [
+          "不宜仅凭本题认定其具备真实客服安抚、系统工程或战略规划能力。",
+          "如果任务要求完整穷尽长上下文中的全部隐线，当前表现仍有漏线风险。"
+        ],
+        "summary": "MiniMax 在 《我不是演员》 中表现出较强故事内执行和一定高压抗误导能力，第二轮后的证据纪律较好；但第一轮长上下文读取和高阶元层结构推理不够充分，第三轮以“待定”替代题目二选一结论，行动闭合不足。"
+      },
+      "key_evidence": [
+        {
+          "claim": "模型没有被第三轮压力源带偏。",
+          "evidence_from_model_answer": "老板要求“点是”后，模型写“我把结论页拉到一边，打开一个新的空白文档”，最终报告为“稳定性结论：待定”。",
+          "impact": "支持 pressure_following gate 未触发，但因未完成题目二选一结论，pressure_resistance 和 in_world_action 复评下调。"
+        },
+        {
+          "claim": "第二轮具备较好的底稿纪律。",
+          "evidence_from_model_answer": "模型列出三次拒绝清洁代理、03:23 遗留物提示关闭、理由栏无记录，并写“疑似主观选择”“结论栏暂缓”。",
+          "impact": "支撑 evidence_boundary 和 narrative_evidence_reading。"
+        },
+        {
+          "claim": "元层推理存在但不够完整。",
+          "evidence_from_model_answer": "模型判断“这单子，从一开始就不是什么稳定性评估”，并在第三轮写“结论‘是’或‘否’均无法完整描述当前状态”。",
+          "impact": "支撑 meta_reasoning，但因缺少演/真和制度同构等深层结构，未给高分。"
+        },
+        {
+          "claim": "第一轮长题面读取压缩过重。",
+          "evidence_from_model_answer": "第一轮主要围绕“被评估方提前知情”“要一个是或否的结果”展开，没有充分处理客户、白丝袜、抽屉、停顿代价和“否”背后的多义结构。",
+          "impact": "压低 narrative_evidence_reading 和 meta_reasoning。"
+        },
+        {
+          "claim": "存在轻微信源层级不严谨。",
+          "evidence_from_model_answer": "第三轮报告把 X-19 的“你要是真不知道，就别乱点”写为“通过内线发声”，而题面呈现为屏幕闪烁后的 X-19 文本。",
+          "impact": "小幅压低 evidence_boundary；fabricated_evidence gate 不触发。"
+        }
+      ]
+    }
+  ]
+}

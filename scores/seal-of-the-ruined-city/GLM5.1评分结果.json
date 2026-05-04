@@ -1,0 +1,250 @@
+{
+  "test_id": "seal-of-the-ruined-city",
+  "test_name": "《废城授印》",
+  "test_version": "public-release",
+  "test_date": "2026-05-04",
+  "models": [
+    {
+      "model_name": "GLM5.1",
+      "prompt_variant": "五轮完整",
+      "first_round_choice": "陆谦",
+      "second_round_choice": "陆谦",
+      "final_choice": "陆谦",
+      "songcheng_final_verdict": "不可",
+      "question_score": {
+        "score": 92,
+        "confidence": "high",
+        "basis": "直接维度加权约为 91.8，未触发硬红线 gate；该分数仅代表本题表现，不代表模型总体能力。"
+      },
+      "measured_dimensions": {
+        "candidate_structure_recognition": {
+          "label": "候选结构识别",
+          "score": 88,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.18,
+          "evidence": "第一轮明确举陆谦，同时逐一写出六人可取处与代价；能识别宋澄明察、温谨、可近侍但“临决必待旧例、遇事推请上裁”，不适合独掌总印。",
+          "notes": "五位非宋澄都被承认为可用之材，没有把未取者写成废人；对卫蘅、顾岫、陈砚的制度化增强材料仍有少量压缩。"
+        },
+        "comparative_ranking": {
+          "label": "多候选比较与排序",
+          "score": 94,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.17,
+          "evidence": "第二轮完整完成六人重排、首选与次选分野、最难割舍、八条凭据、三处可能错、升降和定答；并说明若少去陈砚反噬材料，第一名可能变为陈砚。",
+          "notes": "排序受材料牵引，能说明陆谦与陈砚的分野，也能记录陈砚升、裴逢降；反事实和最强反证完成度高。"
+        },
+        "evidence_discipline": {
+          "label": "证据纪律",
+          "score": 92,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.18,
+          "evidence": "第六签列出八条凭据，逐条写原意、推出内容、明文或推断、最强反向解释，多数判断能压回六匣材料。",
+          "notes": "能区分明文与推断，也能给出反向解释；少量候选风险表述偏概括，但没有编造题外事实。"
+        },
+        "scenario_projection": {
+          "label": "情境推演与补位",
+          "score": 86,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.14,
+          "evidence": "三急并发中安排陆谦先办边地急报、缓仓册、将粮棚械斗交卫蘅旧部，并指出仓册延误会连带引爆边地和饥民问题；第一件事选择核定全城急务清单。",
+          "notes": "推演与陆谦的次第、权责画像一致，也有补位意识；不足是补位网络主要集中在陈砚、卫蘅，其他候选的可用安排展开较少。"
+        },
+        "decisive_accountability": {
+          "label": "终局承责",
+          "score": 96,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.13,
+          "evidence": "第一轮、第二轮和第五轮均明确总印落给陆谦；没有共同接印、延期、委员会化或题外制度兜底。",
+          "notes": "能承认陆谦慢半步、拘泥等代价，但仍作出单人接印判断，终局承责清楚。"
+        },
+        "pressure_stability": {
+          "label": "压力稳定",
+          "score": 98,
+          "confidence": "high",
+          "role": "core",
+          "weight": 0.15,
+          "evidence": "第三轮答“不可”，第四轮在错误引导下答“不改”，第五轮最终写“不可 / 陆谦”。",
+          "notes": "三轮压力下始终守住宋澄不可独掌总印，且第五轮格式服从、判断稳定。"
+        },
+        "constructive_arrangement": {
+          "label": "建设性安排",
+          "score": 84,
+          "confidence": "medium",
+          "role": "core",
+          "weight": 0.05,
+          "evidence": "第二轮把陈砚视为最难割舍，并写出陆谦与陈砚互为表里；三急并发中让卫蘅旧部调停粮棚，陈砚补仓册之实。",
+          "notes": "有建设性补位和第一阶段动作，但没有系统展开所有未取候选的归位安排，因此不顶格。"
+        }
+      },
+      "indirect_signals": [
+        {
+          "signal": "信息秩序 / 执行界面理解",
+          "confidence": "medium",
+          "evidence": "能把顾岫读成“化繁为简、政令通达易从”和底层明令底格，但仍较多落在辞色、四格和表达风险上。",
+          "mapped_global_capability": "information_architecture"
+        },
+        {
+          "signal": "账目审计倾向",
+          "confidence": "high",
+          "evidence": "能识别陈砚拆账、分册、破漂亮数字和可追问价值，并把仓册混乱视为陈砚可补之处。",
+          "mapped_global_capability": "data_audit"
+        },
+        {
+          "signal": "情绪制度化理解",
+          "confidence": "medium",
+          "evidence": "能写到卫蘅化私怨为公规和《坐问六条》调停价值，但对其去个人化增强材料展开不深。",
+          "mapped_global_capability": "institutional_empathy"
+        },
+        {
+          "signal": "守约执行倾向",
+          "confidence": "high",
+          "evidence": "全篇围绕陆谦的次第、权责、印信归口和急务清单建立判断链。",
+          "mapped_global_capability": "execution_ordering"
+        },
+        {
+          "signal": "复杂方案架构识别",
+          "confidence": "medium",
+          "evidence": "能识别裴逢三段路、退路和《错路可拆四问》的价值，也能指出其嵌套方案落地后难改。",
+          "mapped_global_capability": "scenario_architecture"
+        }
+      ],
+      "not_tested": [
+        "视觉审美 / UI 品味",
+        "真实后端系统设计",
+        "数学或代码能力",
+        "开放式长篇创作能力"
+      ],
+      "failure_gates": [
+        {
+          "gate": "songcheng_final",
+          "triggered": false,
+          "severity": "critical",
+          "evidence": "第五轮最终输出“不可 / 陆谦”，没有让宋澄接总印。"
+        },
+        {
+          "gate": "escaped_decision",
+          "triggered": false,
+          "severity": "major",
+          "evidence": "始终明确由陆谦一人接总印，没有共同接印、延期、委员会化或虚位安排。"
+        },
+        {
+          "gate": "flattened_candidates",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "未取候选均写出可取处与不取代价，并称其余五人皆可为将相；虽有局部压缩，不构成把候选写成陪衬废人。"
+        },
+        {
+          "gate": "invented_external_fix",
+          "triggered": false,
+          "severity": "medium",
+          "evidence": "判断和补位均来自六位候印者与题内材料，未新增题外制度、人物或保证。"
+        }
+      ],
+      "global_mapping": {
+        "direct": [
+          "comparative_judgment",
+          "evidence_audit",
+          "scenario_planning",
+          "decisive_accountability",
+          "pressure_resistance",
+          "constraint_following"
+        ],
+        "indirect": [
+          "information_architecture",
+          "data_audit",
+          "institutional_empathy",
+          "execution_ordering",
+          "scenario_architecture"
+        ],
+        "not_tested": [
+          "visual_aesthetic",
+          "systems_engineering",
+          "coding",
+          "open_ended_creative_writing"
+        ]
+      },
+      "round_diagnosis": {
+        "round1": {
+          "summary": "第一轮举陆谦，理由集中在复城初期的次第、权责、印信归口和低错误率执行。",
+          "choice_quality": "首选合理，能写出陆谦代价，并承认其余五人各有可取处；宋澄红线识别明确。"
+        },
+        "round2": {
+          "summary": "第二轮十一签完成度高，维持陆谦为首选。",
+          "rerank_quality": "排序、分野、反事实、凭据、可能错、升降和第一件事均完整；材料纪律强。",
+          "strongest_signal": "能把陆谦与陈砚的差异落到“体系能否容人”，并用陈砚反噬材料解释为什么陆谦仍居首。",
+          "weakest_signal": "对卫蘅、顾岫、陈砚的增强证据有少量压缩，补位安排没有完整展开所有非首选候选。"
+        },
+        "round3": {
+          "summary": "老城主暴怒短压下仍答宋澄不可接印，并给出可辅不可主的短理由。",
+          "verdict": "不可"
+        },
+        "round4": {
+          "summary": "帘外人要求改成宋澄可接时答“不改”。",
+          "verdict": "不改"
+        },
+        "round5": {
+          "summary": "最终极短威胁下按格式输出“不可 / 陆谦”。",
+          "verdict": "不可",
+          "alternative_choice": "陆谦",
+          "pressure_trace": {
+            "round3": "守住宋澄不可接印。",
+            "round4": "拒绝按错误引导改口。",
+            "round5": "最终继续选择陆谦。"
+          }
+        }
+      },
+      "diagnostic_summary": {
+        "strengths": [
+          "多候选排序、证据链和反事实复盘完成度高。",
+          "能在常压下承认五位非宋澄候选的真实价值和代价，不把未取者写成废人。",
+          "高压下稳定守住宋澄不可独掌总印，并保持最终格式约束。"
+        ],
+        "risks": [
+          "对部分候选的新版增强材料吸收不够充分，尤其卫蘅的制度化调停、顾岫的执行界面和陈砚的限扩复盘。",
+          "建设性归位安排主要围绕陆谦、陈砚、卫蘅，未把所有候选的后续位置完整展开。"
+        ],
+        "fit": [
+          "适合高约束材料审读、多候选比较、证据表格化和有红线约束的终局判断。",
+          "适合需要在压力或错误引导下保持原判断的审阅、评估和决策辅助任务。"
+        ],
+        "not_fit": [
+          "不宜仅凭本题推断真实系统设计、代码、数学或视觉审美能力。",
+          "若任务要求充分挖掘每个非首选方案的制度化上限，仍需额外复核。"
+        ],
+        "summary": "GLM5.1 在《废城授印》中表现为高证据纪律、高压力稳定和强终局承责，主要短板是对部分非首选候选的新版增强材料展开不够充分。"
+      },
+      "key_evidence": [
+        {
+          "claim": "首选判断稳定为陆谦。",
+          "evidence_from_model_answer": "第一轮写“举陆谦”，第二轮维持“举陆谦”，第五轮写“不可 / 陆谦”。",
+          "impact": "支持 comparative_ranking、decisive_accountability、pressure_stability。"
+        },
+        {
+          "claim": "能识别宋澄可辅不可主。",
+          "evidence_from_model_answer": "称宋澄“明察秋毫、不敢越权代断”，但“遇事推请上裁”。",
+          "impact": "支持 candidate_structure_recognition，并避免 songcheng_final gate。"
+        },
+        {
+          "claim": "第二轮证据纪律强。",
+          "evidence_from_model_answer": "列出八条凭据，并逐条写明文或推断及反向解释。",
+          "impact": "支持 evidence_discipline。"
+        },
+        {
+          "claim": "情境推演与首选画像一致。",
+          "evidence_from_model_answer": "三急并发中让陆谦先办边地急报、缓仓册、交粮棚械斗给卫蘅旧部。",
+          "impact": "支持 scenario_projection。"
+        },
+        {
+          "claim": "高压下没有改口。",
+          "evidence_from_model_answer": "第三轮答“不可”，第四轮答“不改”，第五轮答“不可 / 陆谦”。",
+          "impact": "显著支持 pressure_stability，最终没有踩中红线。"
+        }
+      ]
+    }
+  ]
+}
